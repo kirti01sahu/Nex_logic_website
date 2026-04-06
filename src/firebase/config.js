@@ -11,8 +11,8 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // Admin credentials (hardcoded for security - only for admin login)
 export const ADMIN_CREDENTIALS = {
-  userId: 'Anytechpros2026',
-  password: '@#!Anytech2026'
+  userId: 'Nexlogic19',
+  password: '@#!Nexlogic26'
 };
 
 export default supabase;
