@@ -1,18 +1,21 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../context/ThemeContext';
 
 const TextLogo = ({
   to = '/',
-  titleClassName = 'text-lg md:text-xl font-bold tracking-wider text-charcoal dark:text-sandstone uppercase',
-  taglineClassName = 'text-[10px] md:text-xs text-brown-grey dark:text-text-dark-muted italic -mt-1',
   wrapperClassName = 'flex items-center gap-3 group',
+  logoClassName = 'h-10 md:h-12 w-auto object-contain transition-all duration-300'
 }) => {
+  const { theme } = useTheme();
+
   return (
     <Link to={to} className={wrapperClassName}>
-      <div className="flex flex-col">
-        <span className={titleClassName}>Nexlogic</span>
-        <span className={taglineClassName}>Where innovation meets execution</span>
-      </div>
+      <img
+        src={theme === 'dark' ? '/d3.png' : '/44.png'}
+        alt="Nexlogic Logo"
+        className={logoClassName}
+      />
     </Link>
   );
 };

@@ -27,7 +27,7 @@ const Services = () => {
       dateColor: 'text-[#A8B5A1]',
       descColor: 'text-[#D4DDCE]',
       type: 'image',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1000&auto=format&fit=crop',
+      image: 'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1000&auto=format&fit=crop',
       date: 'CEO / Testimonial'
     },
     {
