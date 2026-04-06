@@ -7,10 +7,7 @@ export const useFavicon = () => {
   useEffect(() => {
     const favicon = document.getElementById('favicon');
     if (favicon) {
-      // Update favicon based on theme
-      if (theme === 'dark') {
-        favicon.href = '/darklogo1.png';
-      }
+      favicon.href = '/favicon.ico';
     }
   }, [theme]);
 };

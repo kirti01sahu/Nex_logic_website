@@ -149,7 +149,7 @@ const CareersPage = () => {
               Careers
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Join our team of innovators, creators, and problem-solvers. Build the future with AnyTechPros.
+              Join our team of innovators, creators, and problem-solvers. Build the future with Nexlogic.
             </p>
           </div>
         </div>

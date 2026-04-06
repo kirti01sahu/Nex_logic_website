@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import DottedMap from 'dotted-map';
+import TextLogo from './TextLogo';
 
 const Footer = () => {
   const [email, setEmail] = useState('');
@@ -77,14 +78,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-8 md:mb-12">
           {/* Company Info */}
           <div>
-            <Link to="/" className="flex items-center gap-2 md:gap-3 mb-4 md:mb-6">
-              <img 
-                src="/darklogo1.png" 
-                alt="AnyTechPros Logo" 
-                className="w-6 md:w-8 h-6 md:h-8 object-contain"
+            <div className="mb-4 md:mb-6">
+              <TextLogo
+                titleClassName="text-base md:text-lg font-semibold tracking-widest uppercase text-sandstone dark:text-sandstone"
+                taglineClassName="text-[10px] md:text-xs text-text-dark-muted dark:text-text-dark-muted italic -mt-1"
               />
-              <span className="text-base md:text-lg font-semibold tracking-widest uppercase">AnyTechPros</span>
-            </Link>
+            </div>
             <p className="text-text-dark-muted dark:text-text-dark-muted text-sm leading-relaxed mb-4 md:mb-6 font-light">
               Defining the next era of enterprise intelligence through elite engineering and strategic digital vision.
             </p>
@@ -172,41 +171,23 @@ const Footer = () => {
             <div className="space-y-3 text-xs text-text-dark-muted dark:text-text-dark-muted">
               <div>
                 <p className="font-semibold text-sandstone mb-1">Corporate Office</p>
-                <p className="leading-relaxed">First Floor, Nirupam Shopping Mall, Narmadapuram Rd, Bagmugaliya, Bhopal, MP 462026</p>
+                <p className="leading-relaxed">MANIT Incubation Center, Rolta</p>
               </div>
               <div>
                 <p className="font-semibold text-sandstone mb-1">Register Office</p>
-                <p className="leading-relaxed">238, Royal Krishna Bungalow Near Emerald Heights School, Indore, MP 452010</p>
+                <p className="leading-relaxed">MANIT Incubation Center, Rolta</p>
               </div>
               <div className="pt-2">
-                <p className="mb-1"><a href="mailto:info@anytechpros.com" className="hover:text-sandstone transition-colors">info@anytechpros.com</a></p>
+                <p className="mb-1"><a href="mailto:info@nexlogic.com" className="hover:text-sandstone transition-colors">info@nexlogic.com</a></p>
                 <p><a href="tel:+919893220811" className="hover:text-sandstone transition-colors">+91 9893220811</a></p>
-                <p><a href="tel:+919625651944" className="hover:text-sandstone transition-colors">+91 9625651944</a></p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Certifications & Recognition Section */}
+        {/* Incubation Section */}
         <div className="py-6 md:py-8 border-t border-sandstone/10 dark:border-sandstone/10">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {/* Recognized By */}
-            <div>
-              <h5 className="text-[9px] uppercase tracking-widest text-sandstone/60 dark:text-sandstone/60 mb-3">Recognized By</h5>
-              <div className="flex gap-4 items-center flex-wrap">
-                {[1, 2, 3].map((num) => (
-                  <div key={`r${num}`} className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
-                    <img
-                      src={`/r${num}.png`}
-                      alt={`Recognized by ${num}`}
-                      className="w-8 h-8 md:w-10 md:h-10 object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
-
+          <div className="grid grid-cols-1">
             {/* Incubated By */}
             <div>
               <h5 className="text-[9px] uppercase tracking-widest text-sandstone/60 dark:text-sandstone/60 mb-3">Incubated By</h5>
@@ -223,30 +204,13 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-
-            {/* Certified By */}
-            <div>
-              <h5 className="text-[9px] uppercase tracking-widest text-sandstone/60 dark:text-sandstone/60 mb-3">Certified By</h5>
-              <div className="flex gap-4 items-center flex-wrap">
-                {[1, 2].map((num) => (
-                  <div key={`cf${num}`} className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-white flex items-center justify-center hover:scale-110 transition-transform shadow-md">
-                    <img
-                      src={`/cf${num}.png`}
-                      alt={`Certified by ${num}`}
-                      className="w-8 h-8 md:w-10 md:h-10 object-contain"
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
 
         {/* Bottom Bar */}
         <div className="pt-6 md:pt-8 border-t border-sandstone/10 dark:border-sandstone/10 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
           <p className="text-[9px] uppercase tracking-widest text-text-dark-muted/60 dark:text-text-dark-muted/60 text-center md:text-left">
-            © {new Date().getFullYear()} AnyTechPros Infotech LLP. All rights reserved.
+            © {new Date().getFullYear()} Nexlogic. All rights reserved.
           </p>
           <div className="flex gap-8 md:gap-12 text-[9px] uppercase tracking-widest text-text-dark-muted/60 dark:text-text-dark-muted/60">
             <Link to="/privacy" className="hover:text-sandstone dark:hover:text-sandstone transition-colors">Privacy</Link>

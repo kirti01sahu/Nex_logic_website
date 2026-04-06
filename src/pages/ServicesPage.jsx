@@ -29,14 +29,6 @@ const ServicesPage = () => {
       textColor: 'text-[#2F3B35]'
     },
     {
-      title: 'Telecom Consulting',
-      description: 'Advanced telecommunications solutions for modern connectivity needs.',
-      path: '/services/telecom-consulting',
-      features: ['Network Design', '5G Solutions', 'Infrastructure', 'Optimization'],
-      bgColor: 'bg-[#2F4538]',
-      textColor: 'text-[#F7F3ED]'
-    },
-    {
       title: 'E-Governance Consulting',
       description: 'Digital governance solutions for public sector transformation.',
       path: '/services/e-governance-consulting',
@@ -82,14 +74,6 @@ const ServicesPage = () => {
   ];
 
   const products = [
-    {
-      title: 'Advanced Unmanned Aerial Systems',
-      description: 'Next-generation tactical FPV drones engineered for speed, precision, and mission success.',
-      path: '/products/drones',
-      features: ['Micro Systems', 'Fixed Wing', 'Tactical Platforms', 'Mission Capability'],
-      bgColor: 'bg-[#2F4538]',
-      textColor: 'text-[#F7F3ED]'
-    },
     {
       title: 'BotMinds ADDU Agentic AI - AI Automation Platform',
       description: 'AI-powered automation platform that reduces IT burden and boosts productivity.',
@@ -174,8 +158,8 @@ const ServicesPage = () => {
           </div>
           
           {/* Second row with 2 centered cards */}
-          <div className="grid md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto mt-6 md:mt-8">
-            {services.slice(3, 5).map((service, index) => (
+          <div className="grid md:grid-cols-1 gap-6 md:gap-8 max-w-2xl mx-auto mt-6 md:mt-8">
+            {services.slice(3).map((service, index) => (
               <ScrollAnimation key={index + 3}>
                 <Link to={service.path}>
                   <div className={`${service.bgColor} ${service.textColor} p-6 md:p-8 rounded-xl hover:opacity-90 transition-opacity duration-300 h-full`}>

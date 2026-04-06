@@ -27,7 +27,7 @@ const useRazorpay = () => {
     const {
       amount,
       currency = 'INR',
-      name = 'AnyTechPros',
+      name = 'Nexlogic',
       description = 'Service Subscription',
       planType = '',
       onSuccess,
@@ -57,9 +57,8 @@ const useRazorpay = () => {
       key: RAZORPAY_KEY_ID,
       amount: amountInSmallestUnit,
       currency: currency,
-      name: 'AnyTechPros',
+      name: 'Nexlogic',
       description: `${name} - ${description}`,
-      image: '/darklogo1.png', // Your company logo
       handler: function (response) {
         // Payment success
         console.log('Payment Successful:', response);

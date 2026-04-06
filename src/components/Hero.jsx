@@ -75,7 +75,7 @@ const Hero = () => {
 
             {/* Subheading */}
             <p className="hero-subtext text-base md:text-lg lg:text-xl text-white/90 mb-8 md:mb-12 leading-relaxed font-light max-w-2xl mx-auto drop-shadow text-center">
-              AnyTechPros partners with enterprises, startups, and governments to design strategy, build software, and deploy AI powered platforms that deliver measurable business outcomes.
+              Nexlogic partners with enterprises, startups, and governments to design strategy, build software, and deploy AI powered platforms that deliver measurable business outcomes.
             </p>
 
             {/* CTA Buttons */}

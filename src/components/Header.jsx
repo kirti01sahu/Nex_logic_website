@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
+import TextLogo from './TextLogo';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -50,7 +51,6 @@ const Header = () => {
         { name: 'Sales & Growth Consulting', path: '/services/sales-growth-consulting' },
         { name: 'Management & Business Consulting', path: '/services/management-consulting' },
         { name: 'Talent Acquisition Consulting', path: '/services/hr-consulting' },
-        { name: 'Telecom Consulting', path: '/services/telecom-consulting' },
         { name: 'E-Governance Consulting', path: '/services/e-governance-consulting' },
       ]
     },
@@ -70,7 +70,6 @@ const Header = () => {
       icon: 'inventory_2',
       main: { name: 'View All Products', path: '/services' },
       items: [
-        { name: 'Advanced Unmanned Aerial Systems', path: '/products/drones', icon: 'air' },
         { name: 'BotMinds ADDU Agentic AI', path: '/products/botminds', icon: 'psychology' },
         { name: 'WhatsApp Business Solution', path: '/services/whatsapp-marketing', icon: 'chat' },
       ]
@@ -101,22 +100,8 @@ const Header = () => {
     >
       <div className="container-custom px-4 md:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <img 
-              src={theme === 'dark' ? '/darklogo1.png' : '/logolight1.png'} 
-              alt="AnyTechPros Logo" 
-              className="w-8 h-8 md:w-10 md:h-10 object-contain"
-            />
-            <div className="flex flex-col">
-              <span className="text-lg md:text-xl font-bold tracking-wider text-charcoal dark:text-sandstone uppercase">
-                AnyTechPros
-              </span>
-              <span className="text-[10px] md:text-xs text-brown-grey dark:text-text-dark-muted italic -mt-1">
-                Where innovation meets execution
-              </span>
-            </div>
-          </Link>
+          {/* Brand */}
+          <TextLogo />
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-12 ml-16">

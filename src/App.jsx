@@ -28,12 +28,10 @@ import WhatsAppBusinessMarketingPage from './pages/WhatsAppBusinessMarketingPage
 // Service & Product Pages - centralized imports
 import {
   CyberSecurityPage,
-  TelecomConsultingPage,
   EGovernanceConsultingPage,
   ManagementBusinessConsultingPage,
   HRTalentConsultingPage,
   SalesGrowthConsultingPage,
-  DronesAdvancedPage,
   SaasPlatformsPage,
 } from './pages/ServicePages';
 
@@ -75,7 +73,6 @@ function AppContent() {
               <Route path="/admin-dashboard" element={<AdminDashboardPage />} />
 
               {/* Product Pages */}
-              <Route path="/products/drones" element={<DronesAdvancedPage />} />
               <Route path="/products/botminds" element={<SaasPlatformsPage />} />
 
               {/* Next-Gen Solutions Pages */}
@@ -91,7 +88,6 @@ function AppContent() {
               <Route path="/services/hr-consulting" element={<HRTalentConsultingPage />} />
               <Route path="/services/whatsapp-marketing" element={<WhatsAppBusinessMarketingPage />} />
               <Route path="/services/cyber-security" element={<CyberSecurityPage />} />
-              <Route path="/services/telecom-consulting" element={<TelecomConsultingPage />} />
               <Route path="/services/e-governance-consulting" element={<EGovernanceConsultingPage />} />
             </Routes>
           </main>

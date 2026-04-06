@@ -6,8 +6,8 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'What services does AnyTechPros offer?',
-      answer: 'We offer a comprehensive range of services including Software Development, Digital Marketing, Cyber Security, IT Consulting, Management Consulting, Business Consulting, HR Consulting, Telecom Consulting, E-Governance solutions, Market Research, and WhatsApp Marketing.',
+      question: 'What services does Nexlogic offer?',
+      answer: 'We offer a comprehensive range of services including Software Development, Digital Marketing, Cyber Security, IT Consulting, Management Consulting, Business Consulting, HR Consulting, E-Governance solutions, Market Research, and WhatsApp Marketing.',
     },
     {
       question: 'How long does a typical project take?',

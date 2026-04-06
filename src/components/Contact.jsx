@@ -195,10 +195,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-[#2F3B35] text-lg mb-2">Email Us</h4>
                     <p className="text-[#2F3B35]/80 text-sm mb-1">
-                      <a href="mailto:info@anytechpros.com" className="hover:text-[#2F3B35] transition-colors">info@anytechpros.com</a>
+                      <a href="mailto:info@nexlogic.com" className="hover:text-[#2F3B35] transition-colors">info@nexlogic.com</a>
                     </p>
                     <p className="text-[#2F3B35]/80 text-sm">
-                      <a href="mailto:support@anytechpros.com" className="hover:text-[#2F3B35] transition-colors">support@anytechpros.com</a>
+                      <a href="mailto:support@nexlogic.com" className="hover:text-[#2F3B35] transition-colors">support@nexlogic.com</a>
                     </p>
                   </div>
                 </div>
@@ -216,9 +216,6 @@ const Contact = () => {
                     <p className="text-[#2F3B35]/80 text-sm mb-1">
                       <a href="tel:+917464048311" className="hover:text-[#2F3B35] transition-colors">+91 9893220811</a>
                     </p>
-                    <p className="text-[#2F3B35]/80 text-sm">
-                      <a href="tel:+919625651944" className="hover:text-[#2F3B35] transition-colors">+91 9625651944</a>
-                    </p>
                   </div>
                 </div>
               </div>
@@ -231,17 +228,9 @@ const Contact = () => {
                     <span className="material-symbols-outlined text-white text-2xl">location_on</span>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-[#2F3B35] text-lg mb-2">Corporate Office</h4>
+                    <h4 className="font-semibold text-[#2F3B35] text-lg mb-2">Office Address</h4>
                     <p className="text-[#2F3B35]/80 text-sm mb-3">
-                      First Floor, Nirupam Shopping Mall,<br />
-                      Narmadapuram Rd, Bagmugaliya,<br />
-                      Bhopal, Madhya Pradesh 462026
-                    </p>
-                    <h4 className="font-semibold text-[#2F3B35] text-lg mb-2 mt-4">Register Office</h4>
-                    <p className="text-[#2F3B35]/80 text-sm">
-                      238, Royal Krishna Bungalow<br />
-                      Near Emerald Heights School,<br />
-                      Indore, Madhya Pradesh 452010
+                      MANIT Incubation Center, Rolta
                     </p>
                   </div>
                 </div>

@@ -170,7 +170,7 @@ const CyberSecurityPage = () => {
               Empowering Businesses with Next-Gen Cybersecurity Solutions
             </h1>
             <p className="hero-heading text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl">
-              At AnyTechPros, we are dedicated to delivering state-of-the-art cybersecurity solutions that empower businesses to thrive in the digital age. Our advanced technologies and tailored strategies ensure robust protection against evolving cyber threats.
+              At Nexlogic, we are dedicated to delivering state-of-the-art cybersecurity solutions that empower businesses to thrive in the digital age. Our advanced technologies and tailored strategies ensure robust protection against evolving cyber threats.
             </p>
           </div>
         </div>

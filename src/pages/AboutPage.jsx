@@ -19,7 +19,7 @@ const AboutPage = () => {
             <div className="text-center max-w-4xl mx-auto">
               <h1 className="heading-xl mb-6 text-white drop-shadow-lg">Global Consulting & AI Technology Company</h1>
               <p className="text-xl text-white/90 leading-relaxed drop-shadow">
-                AnyTechPros InfoTech LLP is a consulting-driven technology company delivering AI-powered platforms, enterprise software, and strategic digital solutions. Backed by 5+ years of expertise and aligned with global standards including ISO, IEC, and CMMI Level 5, we help organisations design digital strategy, build scalable systems, and achieve measurable business outcomes with confidence and security.
+                Nexlogic is a consulting-driven technology company delivering AI-powered platforms, enterprise software, and strategic digital solutions. Formed in April 2026, we help organisations design digital strategy, build scalable systems, and achieve measurable business outcomes with confidence and security.
               </p>
             </div>
           </ScrollAnimation>
@@ -32,104 +32,38 @@ const AboutPage = () => {
           <ScrollAnimation>
             <div className="space-y-8">
               <p className="text-body text-lg">
-                AnyTechPros InfoTech LLP is a consulting-led technology company that architects AI-driven platforms, enterprise-grade software, and strategic digital solutions for enterprises, startups, and government institutions. With 5+ years of proven expertise, we help organisations design digital strategy, engineer scalable systems, and deliver measurable business impact through intelligent technology.
+                Nexlogic is a consulting-led technology company that architects AI-driven platforms, enterprise-grade software, and strategic digital solutions for enterprises, startups, and public institutions. Founded in April 2026, we are focused on building practical, high-impact digital systems from day one.
               </p>
               <p className="text-body text-lg">
-                Operating at the intersection of consulting, engineering, and artificial intelligence, AnyTechPros bridges the gap between strategic vision and execution. We work closely with leadership teams to modernise technology landscapes, optimise operations, and build future-ready digital ecosystems that enable organisations to compete, innovate, and grow in the digital economy.
+                Operating at the intersection of consulting, engineering, and artificial intelligence, Nexlogic bridges the gap between strategic vision and execution. We work closely with leadership teams to modernise technology landscapes, optimise operations, and build future-ready digital ecosystems that enable organisations to compete, innovate, and grow in the digital economy.
               </p>
               <p className="text-body text-lg">
-                As a DIPP-recognised and MSME-registered consulting and technology partner, AnyTechPros delivers enterprise-grade solutions across IT consulting, software engineering, AI and automation, SaaS platforms, cloud transformation, cybersecurity, telecom consulting, and e-governance. Our multidisciplinary teams combine strategic advisory with deep engineering capabilities to design secure, scalable, and high-performance systems aligned with real business objectives.
+                As a consulting and technology partner, Nexlogic delivers enterprise-grade solutions across IT consulting, software engineering, AI and automation, SaaS platforms, cloud transformation, cybersecurity, and e-governance. Our multidisciplinary teams combine strategic advisory with deep engineering capabilities to design secure, scalable, and high-performance systems aligned with real business objectives.
               </p>
             </div>
           </ScrollAnimation>
         </div>
       </section>
 
-      {/* Certifications */}
+      {/* CEO Perspective */}
       <section className="section bg-section-light dark:bg-section-dark">
-        <div className="container-custom">
+        <div className="container-custom max-w-5xl">
           <ScrollAnimation>
-            <div className="text-center mb-12">
-              <h2 className="heading-lg mb-6">Global Standards, Certifications & Process Excellence</h2>
-              <p className="text-body max-w-4xl mx-auto">
-                AnyTechPros operates with globally recognised standards and best practices, ensuring quality, security, reliability, and process maturity across all solutions and services. Our frameworks and delivery models are aligned with international certifications and enterprise governance standards.
-              </p>
+            <div className="text-center mb-10">
+              <h2 className="heading-lg mb-4">CEO’s Perspective</h2>
             </div>
           </ScrollAnimation>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ScrollAnimation>
-              <div className="bg-[#E8DDD0] p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-full">
-                <h3 className="text-xl font-heading font-semibold text-[#2F3B35] mb-4">
-                  Quality, IT Service & Business Continuity
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-[#2F3B35] mr-2">•</span>
-                    <span className="text-[#2F3B35]/80">ISO 9001:2015 – Quality Management Systems</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#2F3B35] mr-2">•</span>
-                    <span className="text-[#2F3B35]/80">ISO 20000-1:2018 – IT Service Management</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#2F3B35] mr-2">•</span>
-                    <span className="text-[#2F3B35]/80">ISO 22301:2019 – Business Continuity Management</span>
-                  </li>
-                </ul>
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation>
-              <div className="bg-[#C9D8BF] p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-full">
-                <h3 className="text-xl font-heading font-semibold text-[#2F3B35] mb-4">
-                  AI, Software & Systems Engineering
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-[#2F3B35] mr-2">•</span>
-                    <span className="text-[#2F3B35]/80">ISO 42001:2023 – AI Management Systems</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#2F3B35] mr-2">•</span>
-                    <span className="text-[#2F3B35]/80">IEC 90003:2018 – Software Engineering Guidelines</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-[#2F3B35] mr-2">•</span>
-                    <span className="text-[#2F3B35]/80">IEC 25101:2023 – System Quality Models</span>
-                  </li>
-                </ul>
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation>
-              <div className="bg-[#A8B5A1] p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 h-full">
-                <h3 className="text-xl font-heading font-semibold text-[#2F3B35] mb-4">
-                  Information Security & Privacy
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-[#2F3B35] mr-2">•</span>
-                    <span className="text-[#2F3B35]/80">IEC 27701:2022 – Privacy Information Management</span>
-                  </li>
-                </ul>
-                <h3 className="text-xl font-heading font-semibold text-[#2F3B35] mb-4 mt-6">
-                  Process & Capability Excellence
-                </h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-[#2F3B35] mr-2">•</span>
-                    <span className="text-[#2F3B35]/80">CMMI Level 5 – Process Maturity and Performance Excellence</span>
-                  </li>
-                </ul>
-              </div>
-            </ScrollAnimation>
-          </div>
-
           <ScrollAnimation>
-            <div className="text-center mt-12">
-              <p className="text-body text-lg max-w-4xl mx-auto">
-                These certifications reflect our commitment to delivering secure, compliant, and enterprise-ready solutions with consistent quality, governance, and operational excellence.
+            <div className="space-y-6 text-body text-lg">
+              <p>
+                Ritesh Pandey is a technology strategist, business leader, and entrepreneur who believes that real success lies at the intersection of strategy, execution, and scalable systems. With over 17+ years of experience across globally recognized firms such as PwC, EY, KPMG, Grant Thornton, and BDO, along with 4+ years of entrepreneurship expertise, he brings a powerful blend of global consulting exposure and real-world business execution. Having worked on enterprise and government transformation initiatives, he is known for turning complex business challenges into structured, scalable, and execution-ready systems that deliver measurable impact.
+              </p>
+              <p>
+                Having witnessed firsthand where strategies fail — not in vision, but in execution — he founded Nexlogic with a clear mission: to bridge this critical gap. He believes that in today’s rapidly evolving digital economy, organizations must go beyond adopting technology and focus on building intelligent, future-ready systems that continuously evolve. His leadership combines consulting precision with entrepreneurial agility, enabling businesses to move faster, scale smarter, and create long-term value.
+              </p>
+              <p className="text-xl font-heading font-semibold text-black dark:text-sandstone text-center pt-2">
+                “Execution creates value. Systems create scale. Discipline creates lasting success.”
               </p>
             </div>
           </ScrollAnimation>
@@ -200,7 +134,7 @@ const AboutPage = () => {
             <div className="text-center mb-12">
               <h2 className="heading-lg mb-6">Industries We Serve</h2>
               <p className="text-body max-w-4xl mx-auto mb-8">
-                AnyTechPros serves a diverse portfolio of clients across government, telecom, IT, BFSI, education, real estate, and enterprise sectors. Our proprietary SaaS platforms and AI-driven solutions empower organisations to optimise operations, enhance digital resilience, and deliver superior customer experiences.
+                Nexlogic serves a diverse portfolio of clients across government, IT, BFSI, education, real estate, and enterprise sectors. Our proprietary SaaS platforms and AI-driven solutions empower organisations to optimise operations, enhance digital resilience, and deliver superior customer experiences.
               </p>
               <p className="text-xl font-semibold text-text-primary dark:text-text-dark">
                 We measure success not by technology delivered, but by business value created — productivity gains, risk reduction, scalability, and sustainable growth.
@@ -217,15 +151,17 @@ const AboutPage = () => {
             <div className="text-center max-w-4xl mx-auto">
               <h2 className="heading-lg mb-6">Our Vision</h2>
               <p className="text-body text-lg mb-6">
-                At AnyTechPros, innovation is not an option — it is a discipline. We continuously invest in AI, automation, cybersecurity, and emerging technologies to help organisations stay ahead of disruption.
+                At Nexlogic, innovation is not an option — it is a discipline. We continuously invest in AI, automation, cybersecurity, and emerging technologies to help organisations stay ahead of disruption.
               </p>
               <p className="text-xl font-heading font-semibold text-black">
-                AnyTechPros InfoTech LLP is where consulting meets engineering, and strategy becomes scalable technology.
+                Nexlogic, founded in April 2026, is where consulting meets engineering and strategy becomes scalable technology.
               </p>
             </div>
           </ScrollAnimation>
         </div>
       </section>
+
+
     </div>
   );
 };

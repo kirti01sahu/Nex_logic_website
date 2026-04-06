@@ -96,7 +96,7 @@ const SoftwareDevelopmentMainPage = () => {
               Your Partner in Next-Gen Solutions
             </h1>
             <p className="hero-heading text-lg md:text-xl text-white/90 leading-relaxed">
-              At AnyTechPros, we specialize in crafting dynamic and innovative solutions that help businesses thrive in the digital age. With experienced developers and designers, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to your unique needs.
+              At Nexlogic, we specialize in crafting dynamic and innovative solutions that help businesses thrive in the digital age. With experienced developers and designers, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to your unique needs.
             </p>
           </div>
         </div>
