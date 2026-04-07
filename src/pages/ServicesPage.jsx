@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from '../components/ScrollAnimation';
+import SEOHead from '../components/SEOHead';
 
 const ServicesPage = () => {
   const services = [
@@ -94,7 +95,12 @@ const ServicesPage = () => {
 
   return (
     <div>
-      {/* Hero Section */}
+      <SEOHead
+        title="Services — Nextlogic Software, AI & Consulting Solutions"
+        description="Explore Nextlogic Innovation Private Limited's full range of services: AI development, custom software, ERP/CRM, cybersecurity, and strategic consulting. naxlogic.com"
+        canonical="/services"
+      />
+      {/* Hero Section */}}
       <section
         className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center flex items-center justify-center overflow-hidden pt-20 md:pt-24"
         style={{

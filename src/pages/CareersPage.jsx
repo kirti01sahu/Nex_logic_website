@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { supabase } from '../firebase/config';
+import SEOHead from '../components/SEOHead';
 
 const CareersPage = () => {
   const [jobs, setJobs] = useState([]);
@@ -140,16 +141,21 @@ const CareersPage = () => {
 
   return (
     <div>
+      <SEOHead
+        title="Careers at Nextlogic Innovation Private Limited"
+        description="Join Nextlogic Innovation Private Limited (naxlogic.com). Explore careers in AI, software engineering, consulting and more. Shape the future with us."
+        canonical="/careers"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[400px] bg-cover bg-center flex items-center justify-center overflow-hidden pt-20 md:pt-24"
         style={{ backgroundImage: `linear-gradient(rgba(47, 59, 53, 0.85) 0%, rgba(47, 59, 53, 0.9) 100%), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop')` }}>
         <div className="container-custom px-4 md:px-6 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-light text-white mb-6 leading-tight tracking-wide">
-              Careers
+              Careers at Nextlogic
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Join our team of innovators, creators, and problem-solvers. Build the future with Nexlogic.
+              Join our team of innovators, creators, and problem-solvers. Build the future with Nextlogic Innovation Private Limited.
             </p>
           </div>
         </div>

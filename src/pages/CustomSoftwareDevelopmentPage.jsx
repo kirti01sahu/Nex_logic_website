@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import SEOHead from '../components/SEOHead';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -173,6 +174,11 @@ const CustomSoftwareDevelopmentPage = () => {
 
   return (
     <div>
+      <SEOHead
+        title="Custom Software Development — Nextlogic"
+        description="Nextlogic Innovation Private Limited offers custom web, mobile and cloud software development tailored to your business needs. Get expert Nextlogic software solutions at naxlogic.com."
+        canonical="/development/custom-software"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center flex items-center justify-center overflow-hidden pt-20 md:pt-24"
         style={{ backgroundImage: `linear-gradient(rgba(31, 31, 31, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2000&auto=format&fit=crop')` }}>

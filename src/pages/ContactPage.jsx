@@ -2,10 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from '../components/ScrollAnimation';
 import Contact from '../components/Contact';
+import SEOHead from '../components/SEOHead';
 
 const ContactPage = () => {
   return (
     <div className="pt-20">
+      <SEOHead
+        title="Contact Nextlogic — Get in Touch"
+        description="Contact Nextlogic Innovation Private Limited (naxlogic.com). Request a consultation for AI development, software solutions, ERP/CRM, or strategic consulting."
+        canonical="/contact"
+      />
       {/* Hero */}
       <section
         className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center flex items-center justify-center overflow-hidden"

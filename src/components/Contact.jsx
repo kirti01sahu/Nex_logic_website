@@ -195,10 +195,10 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-[#2F3B35] text-lg mb-2">Email Us</h4>
                     <p className="text-[#2F3B35]/80 text-sm mb-1">
-                      <a href="mailto:info@nexlogic.com" className="hover:text-[#2F3B35] transition-colors">info@nexlogic.com</a>
+                      <a href="mailto:info@naxlogic.com" className="hover:text-[#2F3B35] transition-colors">info@naxlogic.com</a>
                     </p>
                     <p className="text-[#2F3B35]/80 text-sm">
-                      <a href="mailto:support@nexlogic.com" className="hover:text-[#2F3B35] transition-colors">support@nexlogic.com</a>
+                      <a href="mailto:support@naxlogic.com" className="hover:text-[#2F3B35] transition-colors">support@naxlogic.com</a>
                     </p>
                   </div>
                 </div>

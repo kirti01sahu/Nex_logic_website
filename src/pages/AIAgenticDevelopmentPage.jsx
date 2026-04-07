@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import SEOHead from '../components/SEOHead';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -155,7 +156,12 @@ const AIAgenticDevelopmentPage = () => {
 
   return (
     <div>
-      {/* Hero Section */}
+      <SEOHead
+        title="AI Agentic Development — Nextlogic"
+        description="Nextlogic Innovation Private Limited builds autonomous AI agents, multi-agent systems, and LLM-integrated platforms. Enterprise-grade AI agentic development at naxlogic.com."
+        canonical="/development/ai-agentic"
+      />
+      {/* Hero Section */}}
       <section className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center flex items-center justify-center overflow-hidden pt-20 md:pt-24"
         style={{ backgroundImage: `linear-gradient(rgba(31, 31, 31, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%), url('https://images.unsplash.com/photo-1535378917042-10a22c95931a?q=80&w=2000&auto=format&fit=crop')` }}>
         <div className="container-custom px-4 md:px-6 py-16 md:py-24 relative z-10">

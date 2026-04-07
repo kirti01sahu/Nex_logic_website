@@ -34,7 +34,7 @@ const WhyUs = () => {
       <div className="container-custom px-4 md:px-6">
         <ScrollAnimation>
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 md:mb-6">Why Choose Nexlogic?</h2>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-4 md:mb-6">Why Choose Nextlogic Innovation Private Limited?</h2>
             <p className="text-base md:text-lg text-text-muted dark:text-text-dark-muted">
               We combine strategic thinking, technical expertise, and a client-first approach to deliver exceptional value.
             </p>

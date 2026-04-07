@@ -57,7 +57,7 @@ const Footer = () => {
   const socialLinks = [
     { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/company/anytechprosinfotech/?viewAsMember=true' },
     { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/share/1Sb31fLPXp/' },
-    { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/anytechpros_infotech/' },
+    { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/anytechpros_infotech/' }, // @nextlogic
   ];
 
   return (
@@ -178,7 +178,7 @@ const Footer = () => {
                 <p className="leading-relaxed">MANIT Incubation Center, Rolta</p>
               </div>
               <div className="pt-2">
-                <p className="mb-1"><a href="mailto:info@nexlogic.com" className="hover:text-sandstone transition-colors">info@nexlogic.com</a></p>
+                <p className="mb-1"><a href="mailto:info@naxlogic.com" className="hover:text-sandstone transition-colors">info@naxlogic.com</a></p>
                 <p><a href="tel:+919893220811" className="hover:text-sandstone transition-colors">+91 9893220811</a></p>
               </div>
             </div>
@@ -210,7 +210,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-6 md:pt-8 border-t border-sandstone/10 dark:border-sandstone/10 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
           <p className="text-[9px] uppercase tracking-widest text-text-dark-muted/60 dark:text-text-dark-muted/60 text-center md:text-left">
-            © {new Date().getFullYear()} Nexlogic. All rights reserved.
+            © {new Date().getFullYear()} Nextlogic Innovation Private Limited. All rights reserved.
           </p>
           <div className="flex gap-8 md:gap-12 text-[9px] uppercase tracking-widest text-text-dark-muted/60 dark:text-text-dark-muted/60">
             <Link to="/privacy" className="hover:text-sandstone dark:hover:text-sandstone transition-colors">Privacy</Link>

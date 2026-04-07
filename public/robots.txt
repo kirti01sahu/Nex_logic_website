@@ -1,0 +1,15 @@
+# robots.txt — Nextlogic Innovation Private Limited (naxlogic.com)
+# Generated: 2026-04-07
+
+User-agent: *
+Allow: /
+
+# Disallow admin and internal routes
+Disallow: /admin-login
+Disallow: /admin-dashboard
+
+# Sitemap
+Sitemap: https://naxlogic.com/sitemap.xml
+
+# Crawl-delay (optional — omit if you want max crawl speed)
+# Crawl-delay: 1

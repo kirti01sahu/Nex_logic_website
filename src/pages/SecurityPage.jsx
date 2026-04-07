@@ -58,7 +58,7 @@ const SecurityPage = () => {
                   1. Security Overview
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  At Nexlogic, security is a top priority. We implement comprehensive security measures to protect your data and systems from unauthorized access, disclosure, alteration, and destruction.
+                  At Nextlogic Innovation Private Limited, security is a top priority. We implement comprehensive security measures to protect your data and systems from unauthorized access, disclosure, alteration, and destruction.
                 </p>
                 <p className="text-sm leading-relaxed">
                   This Security Policy outlines the security practices and procedures we employ to safeguard your information and that of our organization.
@@ -142,7 +142,7 @@ const SecurityPage = () => {
                   6. Compliance & Standards
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  Nexlogic complies with major security standards and regulations:
+                  Nextlogic Innovation Private Limited complies with major security standards and regulations:
                 </p>
                 <ul className="text-sm space-y-2 ml-4 mb-4">
                   <li>• ISO 27001 Information Security Management</li>
@@ -178,7 +178,7 @@ const SecurityPage = () => {
                   8. Employee Security Training
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  All Nexlogic employees receive regular security training:
+                  All Nextlogic Innovation Private Limited employees receive regular security training:
                 </p>
                 <ul className="text-sm space-y-2 ml-4 mb-4">
                   <li>• Annual security awareness training</li>
@@ -199,8 +199,8 @@ const SecurityPage = () => {
                 </p>
                 <div className={`${theme === 'dark' ? 'bg-charcoal-light' : 'bg-gray-100'} p-6 rounded-lg text-sm space-y-2`}>
                   <p><strong>Security Team</strong></p>
-                  <p><strong>Email:</strong> <a href="mailto:security@nexlogic.com" className="hover:underline text-charcoal dark:text-sandstone">security@nexlogic.com</a></p>
-                  <p><strong>General Inquiries:</strong> <a href="mailto:info@nexlogic.com" className="hover:underline text-charcoal dark:text-sandstone">info@nexlogic.com</a></p>
+                  <p><strong>Email:</strong> <a href="mailto:security@naxlogic.com" className="hover:underline text-charcoal dark:text-sandstone">security@naxlogic.com</a></p>
+                  <p><strong>General Inquiries:</strong> <a href="mailto:info@naxlogic.com" className="hover:underline text-charcoal dark:text-sandstone">info@naxlogic.com</a></p>
                   <p><strong>Phone:</strong> <a href="tel:+919893220811" className="hover:underline text-charcoal dark:text-sandstone">+91 9893220811</a></p>
                   <p className="text-xs text-text-muted dark:text-text-dark-muted mt-4">
                     Please allow 48 hours for an initial response to security inquiries.

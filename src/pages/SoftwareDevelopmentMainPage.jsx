@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import SEOHead from '../components/SEOHead';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,6 +88,11 @@ const SoftwareDevelopmentMainPage = () => {
 
   return (
     <div>
+      <SEOHead
+        title="Software Development Services — Nextlogic"
+        description="Nextlogic Innovation Private Limited's next-gen software development services: AI, custom apps, ERP/CRM, cloud and more. Nextlogic software development at naxlogic.com."
+        canonical="/development"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center flex items-center justify-center overflow-hidden pt-20 md:pt-24"
         style={{ backgroundImage: `linear-gradient(rgba(31, 31, 31, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%), url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2000&auto=format&fit=crop')` }}>
@@ -96,7 +102,7 @@ const SoftwareDevelopmentMainPage = () => {
               Your Partner in Next-Gen Solutions
             </h1>
             <p className="hero-heading text-lg md:text-xl text-white/90 leading-relaxed">
-              At Nexlogic, we specialize in crafting dynamic and innovative solutions that help businesses thrive in the digital age. With experienced developers and designers, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to your unique needs.
+              At Nextlogic Innovation Private Limited, we specialize in crafting dynamic and innovative solutions that help businesses thrive in the digital age. With experienced developers and designers, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to your unique needs.
             </p>
           </div>
         </div>

@@ -6,7 +6,7 @@ const FAQ = () => {
 
   const faqs = [
     {
-      question: 'What services does Nexlogic offer?',
+      question: 'What services does Nextlogic Innovation Private Limited offer?',
       answer: 'We offer a comprehensive range of services including Software Development, Digital Marketing, Cyber Security, IT Consulting, Management Consulting, Business Consulting, HR Consulting, E-Governance solutions, Market Research, and WhatsApp Marketing.',
     },
     {

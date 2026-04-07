@@ -58,7 +58,7 @@ const TermsPage = () => {
                   1. Acceptance of Terms
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  By accessing and using the AnyTechPros website and services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+                  By accessing and using the Nextlogic Innovation Private Limited website (naxlogic.com) and services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
                 </p>
               </section>
 
@@ -68,7 +68,7 @@ const TermsPage = () => {
                   2. Use License
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  Permission is granted to temporarily download one copy of the materials (information or software) on AnyTechPros website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                  Permission is granted to temporarily download one copy of the materials (information or software) on Nextlogic Innovation Private Limited website (naxlogic.com) for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
                 </p>
                 <ul className="text-sm space-y-2 ml-4 mb-4">
                   <li>• Modifying or copying the materials</li>
@@ -85,7 +85,7 @@ const TermsPage = () => {
                   3. Disclaimer
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  The materials on the AnyTechPros website are provided on an "as is" basis. AnyTechPros makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                  The materials on the Nextlogic Innovation Private Limited website (naxlogic.com) are provided on an "as is" basis. Nextlogic Innovation Private Limited makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
                 </p>
               </section>
 
@@ -95,7 +95,7 @@ const TermsPage = () => {
                   4. Limitations of Liability
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  In no event shall AnyTechPros or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the AnyTechPros website, even if AnyTechPros or an authorized representative has been notified of the possibility of such damage.
+                  In no event shall Nextlogic Innovation Private Limited or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on the Nextlogic Innovation Private Limited website, even if Nextlogic Innovation Private Limited or an authorized representative has been notified of the possibility of such damage.
                 </p>
               </section>
 
@@ -105,10 +105,10 @@ const TermsPage = () => {
                   5. Accuracy of Materials & Intellectual Property
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  The materials appearing on the AnyTechPros website could include technical, typographical, or photographic errors. AnyTechPros does not warrant that any of the materials on its website are accurate, complete, or current. AnyTechPros may make changes to the materials contained on its website at any time without notice.
+                  The materials appearing on the Nextlogic Innovation Private Limited website could include technical, typographical, or photographic errors. Nextlogic Innovation Private Limited does not warrant that any of the materials on its website are accurate, complete, or current. Nextlogic may make changes to the materials contained on its website at any time without notice.
                 </p>
                 <p className="text-sm leading-relaxed mb-4">
-                  All content on our website, including text, graphics, logos, images, and software, is the property of AnyTechPros Infotech LLP or its content suppliers and is protected by international copyright laws.
+                  All content on our website, including text, graphics, logos, images, and software, is the property of Nextlogic Innovation Private Limited or its content suppliers and is protected by international copyright laws.
                 </p>
               </section>
 
@@ -118,7 +118,7 @@ const TermsPage = () => {
                   6. Links & Third-Party Content
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  AnyTechPros has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by AnyTechPros of the site. Use of any such linked website is at the user's own risk.
+                  Nextlogic Innovation Private Limited has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Nextlogic Innovation Private Limited of the site. Use of any such linked website is at the user's own risk.
                 </p>
               </section>
 
@@ -128,10 +128,10 @@ const TermsPage = () => {
                   7. Modifications & Termination
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  AnyTechPros may revise these terms of service for its website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.
+                  Nextlogic Innovation Private Limited may revise these terms of service for its website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these terms of service.
                 </p>
                 <p className="text-sm leading-relaxed mb-4">
-                  AnyTechPros may terminate your access to the website at any time without notice for conduct that it believes violates the terms of service or the rights of others.
+                  Nextlogic Innovation Private Limited may terminate your access to the website at any time without notice for conduct that it believes violates the terms of service or the rights of others.
                 </p>
               </section>
 
@@ -154,9 +154,9 @@ const TermsPage = () => {
                   If you have any questions about these Terms of Service, please contact us at:
                 </p>
                 <div className={`${theme === 'dark' ? 'bg-charcoal-light' : 'bg-gray-100'} p-6 rounded-lg text-sm space-y-2`}>
-                  <p><strong>AnyTechPros Infotech LLP</strong></p>
-                  <p>First Floor, Nirupam Shopping Mall<br />Narmadapuram Rd, Bagmugaliya<br />Bhopal, MP 462026, India</p>
-                  <p><strong>Email:</strong> <a href="mailto:info@anytechpros.com" className="hover:underline text-charcoal dark:text-sandstone">info@anytechpros.com</a></p>
+                  <p><strong>Nextlogic Innovation Private Limited</strong></p>
+                  <p>MANIT Incubation Center, Rolta<br />Bhopal, MP 462026, India</p>
+                  <p><strong>Email:</strong> <a href="mailto:info@naxlogic.com" className="hover:underline text-charcoal dark:text-sandstone">info@naxlogic.com</a></p>
                   <p><strong>Phone:</strong> <a href="tel:+919893220811" className="hover:underline text-charcoal dark:text-sandstone">+91 9893220811</a></p>
                 </div>
               </section>

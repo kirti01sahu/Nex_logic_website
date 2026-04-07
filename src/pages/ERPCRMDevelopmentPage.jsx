@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import SEOHead from '../components/SEOHead';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -251,6 +252,11 @@ const ERPCRMDevelopmentPage = () => {
 
   return (
     <div>
+      <SEOHead
+        title="ERP & CRM Development — Nextlogic Software Solutions"
+        description="Nextlogic Innovation Private Limited implements SAP, Microsoft Dynamics, Oracle, Salesforce and custom ERP/CRM solutions. Expert Nextlogic CRM development at naxlogic.com."
+        canonical="/development/erp-crm"
+      />
       {/* Hero Section */}
       <section className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center flex items-center justify-center overflow-hidden pt-20 md:pt-24"
         style={{ backgroundImage: `linear-gradient(rgba(31, 31, 31, 0.7) 0%, rgba(31, 31, 31, 0.8) 100%), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2000&auto=format&fit=crop')` }}>

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import SEOHead from '../components/SEOHead';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -168,7 +169,12 @@ const WhatsAppBusinessMarketingPage = () => {
 
   return (
     <div>
-      {/* Hero Section */}
+      <SEOHead
+        title="WhatsApp Business Marketing"
+        description="Engage customers at scale with Nextlogic Innovation Private Limited's WhatsApp Business marketing solutions — automated campaigns, chatbots, and rich media messaging. naxlogic.com"
+        canonical="https://naxlogic.com/whatsapp-business-marketing"
+      />
+      {/* Hero Section */}}
       <section className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center flex items-center justify-center overflow-hidden pt-20 md:pt-24"
         style={{ backgroundImage: `linear-gradient(rgba(47, 69, 56, 0.85) 0%, rgba(47, 69, 56, 0.9) 100%), url('https://images.unsplash.com/photo-1556761175-b413da4baf72?q=80&w=2000&auto=format&fit=crop')` }}>
         <div className="container-custom px-4 md:px-6 py-16 md:py-24 relative z-10">
