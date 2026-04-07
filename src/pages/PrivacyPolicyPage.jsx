@@ -58,7 +58,7 @@ const PrivacyPolicyPage = () => {
                   1. Introduction
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  Nextlogic Innovation Private Limited ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (naxlogic.com) and use our services.
+                  Nexlogic Innovation Private Limited ("we," "us," "our," or "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (naxlogic.com) and use our services.
                 </p>
                 <p className="text-sm leading-relaxed">
                   Please read this Privacy Policy carefully. If you do not agree with our policies and practices, please do not access our website or use our services. By accessing and using our website, you acknowledge that you have read, understood, and agree to be bound by all the terms of this Privacy Policy.
@@ -193,7 +193,7 @@ const PrivacyPolicyPage = () => {
                   If you have questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us at:
                 </p>
                 <div className={`${theme === 'dark' ? 'bg-charcoal-light' : 'bg-gray-100'} p-6 rounded-lg text-sm space-y-2`}>
-                  <p><strong>Nextlogic Innovation Private Limited</strong></p>
+                  <p><strong>Nexlogic Innovation Private Limited</strong></p>
                   <p>MANIT Incubation Center, Rolta<br />Bhopal, MP 462026, India</p>
                   <p><strong>Email:</strong> <a href="mailto:info@naxlogic.com" className="hover:underline text-charcoal dark:text-sandstone">info@naxlogic.com</a></p>
                   <p><strong>Phone:</strong> <a href="tel:+919893220811" className="hover:underline text-charcoal dark:text-sandstone">+91 9893220811</a></p>

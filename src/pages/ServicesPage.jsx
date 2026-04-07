@@ -96,8 +96,8 @@ const ServicesPage = () => {
   return (
     <div>
       <SEOHead
-        title="Services — Nextlogic Software, AI & Consulting Solutions"
-        description="Explore Nextlogic Innovation Private Limited's full range of services: AI development, custom software, ERP/CRM, cybersecurity, and strategic consulting. naxlogic.com"
+        title="Services — Nexlogic Software, AI & Consulting Solutions"
+        description="Explore Nexlogic Innovation Private Limited's full range of services: AI development, custom software, ERP/CRM, cybersecurity, and strategic consulting. naxlogic.com"
         canonical="/services"
       />
       {/* Hero Section */}}

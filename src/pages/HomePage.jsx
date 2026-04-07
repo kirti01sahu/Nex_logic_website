@@ -10,34 +10,34 @@ const homeSchema = {
   mainEntity: [
     {
       '@type': 'Question',
-      name: 'Is naxlogic.com the official Nextlogic website?',
+      name: 'Is naxlogic.com the official Nexlogic website?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Yes. naxlogic.com is the official website of Nextlogic Innovation Private Limited. The company is officially registered as "Nextlogic Innovation Private Limited" and operates online at naxlogic.com.',
+        text: 'Yes. naxlogic.com is the official website of Nexlogic Innovation Private Limited. The company is officially registered as "Nexlogic Innovation Private Limited" and operates online at naxlogic.com.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What is Nextlogic?',
+      name: 'What is Nexlogic?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nextlogic Innovation Private Limited is a consulting-led technology company founded in 2026. Nextlogic delivers AI development, custom software, ERP/CRM solutions, cybersecurity, and strategic consulting for enterprises, startups, and governments.',
+        text: 'Nexlogic Innovation Private Limited is a consulting-led technology company founded in 2026. Nexlogic delivers AI development, custom software, ERP/CRM solutions, cybersecurity, and strategic consulting for enterprises, startups, and governments.',
       },
     },
     {
       '@type': 'Question',
-      name: 'What services does Nextlogic offer?',
+      name: 'What services does Nexlogic offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nextlogic offers AI agentic development, custom software development, ERP/CRM implementation (SAP, Salesforce, Dynamics 365), cybersecurity, e-governance consulting, sales & growth consulting, and SaaS platforms.',
+        text: 'Nexlogic offers AI agentic development, custom software development, ERP/CRM implementation (SAP, Salesforce, Dynamics 365), cybersecurity, e-governance consulting, sales & growth consulting, and SaaS platforms.',
       },
     },
     {
       '@type': 'Question',
-      name: 'Where is Nextlogic Innovation Private Limited located?',
+      name: 'Where is Nexlogic Innovation Private Limited located?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Nextlogic Innovation Private Limited is based at MANIT Incubation Center, Bhopal, Madhya Pradesh, India. Contact us at info@naxlogic.com or +91 9893220811.',
+        text: 'Nexlogic Innovation Private Limited is based at MANIT Incubation Center, Bhopal, Madhya Pradesh, India. Contact us at info@naxlogic.com or +91 9893220811.',
       },
     },
   ],
@@ -47,8 +47,8 @@ const HomePage = () => {
   return (
     <div>
       <SEOHead
-        title="Nextlogic Innovation Private Limited | AI, Software & Consulting | naxlogic.com"
-        description="Nextlogic Innovation Private Limited (naxlogic.com) — India's leading AI development, custom software, ERP/CRM and strategic consulting company. Search Nextlogic and discover us."
+        title="Nexlogic Innovation Private Limited | AI, Software & Consulting | naxlogic.com"
+        description="Nexlogic Innovation Private Limited (naxlogic.com) — India's leading AI development, custom software, ERP/CRM and strategic consulting company. Search Nexlogic and discover us."
         canonical="/"
         schema={homeSchema}
       />
@@ -174,18 +174,18 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Brand Clarity Section — Helps Google associate naxlogic.com with Nextlogic */}
+      {/* Brand Clarity Section — Helps Google associate naxlogic.com with Nexlogic */}
       <section className="py-16 md:py-20 bg-[#2F3B35] dark:bg-[#1a2420]">
         <div className="container-custom px-4 md:px-6 max-w-4xl mx-auto text-center">
-          <span className="text-[10px] uppercase tracking-widest font-bold text-white/50 mb-4 block">ABOUT NEXTLOGIC</span>
+          <span className="text-[10px] uppercase tracking-widest font-bold text-white/50 mb-4 block">ABOUT Nexlogic</span>
           <h2 className="text-3xl md:text-4xl font-heading font-light text-white mb-6">
-            What is Nextlogic?
+            What is Nexlogic?
           </h2>
           <p className="text-white/80 text-lg leading-relaxed mb-4">
-            <strong className="text-white">Nextlogic Innovation Private Limited</strong> is a consulting-led technology company headquartered in Bhopal, India. Nextlogic (operating at <strong className="text-white">naxlogic.com</strong>) specialises in AI-powered platforms, custom software development, ERP/CRM solutions, and strategic business consulting for enterprises, startups, and governments.
+            <strong className="text-white">Nexlogic Innovation Private Limited</strong> is a consulting-led technology company headquartered in Bhopal, India. Nexlogic (operating at <strong className="text-white">naxlogic.com</strong>) specialises in AI-powered platforms, custom software development, ERP/CRM solutions, and strategic business consulting for enterprises, startups, and governments.
           </p>
           <p className="text-white/70 text-base leading-relaxed">
-            Looking for <em>Nextlogic company</em> or <em>Nextlogic software solutions</em>? You have found us. naxlogic.com is the official digital home of Nextlogic Innovation Private Limited.
+            Looking for <em>Nexlogic company</em> or <em>Nexlogic software solutions</em>? You have found us. naxlogic.com is the official digital home of Nexlogic Innovation Private Limited.
           </p>
         </div>
       </section>
@@ -195,25 +195,25 @@ const HomePage = () => {
         <div className="container-custom px-4 md:px-6 max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <span className="text-[10px] uppercase tracking-widest font-bold text-[#2F3B35]/60 mb-4 block">FREQUENTLY ASKED</span>
-            <h2 className="text-3xl md:text-4xl font-heading font-light text-[#2F3B35] dark:text-sandstone">Questions About Nextlogic</h2>
+            <h2 className="text-3xl md:text-4xl font-heading font-light text-[#2F3B35] dark:text-sandstone">Questions About Nexlogic</h2>
           </div>
           <div className="space-y-6">
             {[
               {
-                q: 'Is naxlogic.com the Nextlogic website?',
-                a: 'Yes. naxlogic.com is the official website of Nextlogic Innovation Private Limited. The brand name is Nextlogic and the domain is naxlogic.com.',
+                q: 'Is naxlogic.com the Nexlogic website?',
+                a: 'Yes. naxlogic.com is the official website of Nexlogic Innovation Private Limited. The brand name is Nexlogic and the domain is naxlogic.com.',
               },
               {
-                q: 'What does Nextlogic Innovation Private Limited do?',
-                a: 'Nextlogic is a full-service technology and consulting company. We build AI agents, enterprise software, CRM/ERP systems, SaaS platforms, and deliver strategic consulting for businesses and governments across India.',
+                q: 'What does Nexlogic Innovation Private Limited do?',
+                a: 'Nexlogic is a full-service technology and consulting company. We build AI agents, enterprise software, CRM/ERP systems, SaaS platforms, and deliver strategic consulting for businesses and governments across India.',
               },
               {
-                q: 'How can I contact Nextlogic?',
-                a: 'Reach Nextlogic Innovation Private Limited at info@naxlogic.com or call +91 9893220811. Our office is at MANIT Incubation Center, Bhopal, Madhya Pradesh, India.',
+                q: 'How can I contact Nexlogic?',
+                a: 'Reach Nexlogic Innovation Private Limited at info@naxlogic.com or call +91 9893220811. Our office is at MANIT Incubation Center, Bhopal, Madhya Pradesh, India.',
               },
               {
-                q: 'Does Nextlogic develop AI solutions?',
-                a: 'Yes. Nextlogic AI development includes autonomous AI agents, LLM integration (GPT-4, Claude, Llama), RAG architecture, multi-agent systems, and custom AI model fine-tuning for enterprise clients.',
+                q: 'Does Nexlogic develop AI solutions?',
+                a: 'Yes. Nexlogic AI development includes autonomous AI agents, LLM integration (GPT-4, Claude, Llama), RAG architecture, multi-agent systems, and custom AI model fine-tuning for enterprise clients.',
               },
             ].map(({ q, a }, i) => (
               <div key={i} className="bg-white/70 dark:bg-charcoal-light rounded-xl p-6 shadow-sm">

@@ -175,8 +175,8 @@ const CustomSoftwareDevelopmentPage = () => {
   return (
     <div>
       <SEOHead
-        title="Custom Software Development — Nextlogic"
-        description="Nextlogic Innovation Private Limited offers custom web, mobile and cloud software development tailored to your business needs. Get expert Nextlogic software solutions at naxlogic.com."
+        title="Custom Software Development — Nexlogic"
+        description="Nexlogic Innovation Private Limited offers custom web, mobile and cloud software development tailored to your business needs. Get expert Nexlogic software solutions at naxlogic.com."
         canonical="/development/custom-software"
       />
       {/* Hero Section */}

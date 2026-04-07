@@ -157,8 +157,8 @@ const AIAgenticDevelopmentPage = () => {
   return (
     <div>
       <SEOHead
-        title="AI Agentic Development — Nextlogic"
-        description="Nextlogic Innovation Private Limited builds autonomous AI agents, multi-agent systems, and LLM-integrated platforms. Enterprise-grade AI agentic development at naxlogic.com."
+        title="AI Agentic Development — Nexlogic"
+        description="Nexlogic Innovation Private Limited builds autonomous AI agents, multi-agent systems, and LLM-integrated platforms. Enterprise-grade AI agentic development at naxlogic.com."
         canonical="/development/ai-agentic"
       />
       {/* Hero Section */}}

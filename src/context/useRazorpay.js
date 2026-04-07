@@ -27,7 +27,7 @@ const useRazorpay = () => {
     const {
       amount,
       currency = 'INR',
-      name = 'Nextlogic Innovation Private Limited',
+      name = 'Nexlogic Innovation Private Limited',
       description = 'Service Subscription',
       planType = '',
       onSuccess,
@@ -57,7 +57,7 @@ const useRazorpay = () => {
       key: RAZORPAY_KEY_ID,
       amount: amountInSmallestUnit,
       currency: currency,
-      name: 'Nextlogic Innovation Private Limited',
+      name: 'Nexlogic Innovation Private Limited',
       description: `${name} - ${description}`,
       handler: function (response) {
         // Payment success

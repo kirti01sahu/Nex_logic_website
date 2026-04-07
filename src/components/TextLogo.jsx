@@ -13,7 +13,7 @@ const TextLogo = ({
     <Link to={to} className={wrapperClassName}>
       <img
         src={theme === 'dark' ? '/d3.png' : '/44.png'}
-        alt="Nextlogic Innovation Private Limited Logo"
+        alt="Nexlogic Innovation Private Limited Logo"
         className={logoClassName}
       />
     </Link>

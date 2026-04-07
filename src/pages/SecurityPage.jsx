@@ -58,7 +58,7 @@ const SecurityPage = () => {
                   1. Security Overview
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  At Nextlogic Innovation Private Limited, security is a top priority. We implement comprehensive security measures to protect your data and systems from unauthorized access, disclosure, alteration, and destruction.
+                  At Nexlogic Innovation Private Limited, security is a top priority. We implement comprehensive security measures to protect your data and systems from unauthorized access, disclosure, alteration, and destruction.
                 </p>
                 <p className="text-sm leading-relaxed">
                   This Security Policy outlines the security practices and procedures we employ to safeguard your information and that of our organization.
@@ -142,7 +142,7 @@ const SecurityPage = () => {
                   6. Compliance & Standards
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  Nextlogic Innovation Private Limited complies with major security standards and regulations:
+                  Nexlogic Innovation Private Limited complies with major security standards and regulations:
                 </p>
                 <ul className="text-sm space-y-2 ml-4 mb-4">
                   <li>• ISO 27001 Information Security Management</li>
@@ -178,7 +178,7 @@ const SecurityPage = () => {
                   8. Employee Security Training
                 </h2>
                 <p className="text-sm leading-relaxed mb-4">
-                  All Nextlogic Innovation Private Limited employees receive regular security training:
+                  All Nexlogic Innovation Private Limited employees receive regular security training:
                 </p>
                 <ul className="text-sm space-y-2 ml-4 mb-4">
                   <li>• Annual security awareness training</li>

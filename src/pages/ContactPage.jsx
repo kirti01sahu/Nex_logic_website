@@ -8,8 +8,8 @@ const ContactPage = () => {
   return (
     <div className="pt-20">
       <SEOHead
-        title="Contact Nextlogic — Get in Touch"
-        description="Contact Nextlogic Innovation Private Limited (naxlogic.com). Request a consultation for AI development, software solutions, ERP/CRM, or strategic consulting."
+        title="Contact Nexlogic — Get in Touch"
+        description="Contact Nexlogic Innovation Private Limited (naxlogic.com). Request a consultation for AI development, software solutions, ERP/CRM, or strategic consulting."
         canonical="/contact"
       />
       {/* Hero */}

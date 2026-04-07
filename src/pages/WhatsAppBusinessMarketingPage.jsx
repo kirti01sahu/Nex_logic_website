@@ -171,7 +171,7 @@ const WhatsAppBusinessMarketingPage = () => {
     <div>
       <SEOHead
         title="WhatsApp Business Marketing"
-        description="Engage customers at scale with Nextlogic Innovation Private Limited's WhatsApp Business marketing solutions — automated campaigns, chatbots, and rich media messaging. naxlogic.com"
+        description="Engage customers at scale with Nexlogic Innovation Private Limited's WhatsApp Business marketing solutions — automated campaigns, chatbots, and rich media messaging. naxlogic.com"
         canonical="https://naxlogic.com/whatsapp-business-marketing"
       />
       {/* Hero Section */}}

@@ -253,8 +253,8 @@ const ERPCRMDevelopmentPage = () => {
   return (
     <div>
       <SEOHead
-        title="ERP & CRM Development — Nextlogic Software Solutions"
-        description="Nextlogic Innovation Private Limited implements SAP, Microsoft Dynamics, Oracle, Salesforce and custom ERP/CRM solutions. Expert Nextlogic CRM development at naxlogic.com."
+        title="ERP & CRM Development — Nexlogic Software Solutions"
+        description="Nexlogic Innovation Private Limited implements SAP, Microsoft Dynamics, Oracle, Salesforce and custom ERP/CRM solutions. Expert Nexlogic CRM development at naxlogic.com."
         canonical="/development/erp-crm"
       />
       {/* Hero Section */}

@@ -60,7 +60,7 @@ const Hero = () => {
             
             {/* Main Heading */}
             <h1 className="hero-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-light leading-tight tracking-tight text-white mb-6 md:mb-8 drop-shadow-lg">
-              Nextlogic — Strategy Led Consulting.
+              Nexlogic — Strategy Led Consulting.
               <span className="block mt-1 md:mt-2">
                 Product Driven Execution.
               </span>
@@ -71,7 +71,7 @@ const Hero = () => {
 
             {/* Subheading */}
             <p className="hero-subtext text-base md:text-lg lg:text-xl text-white/90 mb-8 md:mb-12 leading-relaxed font-light max-w-2xl mx-auto drop-shadow text-center">
-              Nextlogic Innovation Private Limited (naxlogic.com) partners with enterprises, startups, and governments to design strategy, build software, and deploy AI‑powered platforms that deliver measurable business outcomes.
+              Nexlogic Innovation Private Limited (naxlogic.com) partners with enterprises, startups, and governments to design strategy, build software, and deploy AI‑powered platforms that deliver measurable business outcomes.
             </p>
 
             {/* CTA Buttons */}
