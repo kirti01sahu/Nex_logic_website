@@ -55,9 +55,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/company/anytechprosinfotech/?viewAsMember=true' },
-    { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/share/1Sb31fLPXp/' },
-    { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/anytechpros_infotech/' }, // @Nexlogic
+    { name: 'LinkedIn', icon: 'linkedin', url: 'https://www.linkedin.com/company/nexlogicx/posts/?feedView=all' },
+    { name: 'Facebook', icon: 'facebook', url: 'https://www.facebook.com/profile.php?id=61573488368112' },
+    { name: 'Instagram', icon: 'instagram', url: 'https://www.instagram.com/nexlogic_official/' },
   ];
 
   return (
