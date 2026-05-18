@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import ScrollAnimation from './ScrollAnimation';
 
 const Testimonials = () => {
@@ -10,35 +10,35 @@ const Testimonials = () => {
       position: 'CEO',
       company: 'TechCorp Global',
       rating: 5,
-      text: 'Nexlogic Innovation Private Limited transformed our entire digital infrastructure. Their expertise and dedication to our success exceeded all expectations. The ROI has been phenomenal.',
+      text: 'NexLogic Innovation Private Limited transformed our entire digital infrastructure. Their expertise and dedication to our success exceeded all expectations. The ROI has been phenomenal.',
     },
     {
       name: 'Michael Chen',
       position: 'CTO',
       company: 'InnovateSoft',
       rating: 5,
-      text: 'Working with Nexlogic Innovation Private Limited was a game-changer for our organization. Their team brought innovative solutions and delivered results faster than we thought possible.',
+      text: 'Working with NexLogic Innovation Private Limited was a game-changer for our organization. Their team brought innovative solutions and delivered results faster than we thought possible.',
     },
     {
       name: 'Emily Rodriguez',
       position: 'VP of Operations',
       company: 'Global Retail Inc',
       rating: 5,
-      text: 'The level of professionalism and expertise demonstrated by Nexlogic Innovation Private Limited is unmatched. They truly understand our business needs and deliver solutions that work.',
+      text: 'The level of professionalism and expertise demonstrated by NexLogic Innovation Private Limited is unmatched. They truly understand our business needs and deliver solutions that work.',
     },
     {
       name: 'David Thompson',
       position: 'Director of IT',
       company: 'Financial Services Co',
       rating: 5,
-      text: 'Exceptional service from start to finish. Nexlogic Innovation Private Limited not only met our technical requirements but also provided strategic guidance that added tremendous value.',
+      text: 'Exceptional service from start to finish. NexLogic Innovation Private Limited not only met our technical requirements but also provided strategic guidance that added tremendous value.',
     },
     {
       name: 'Lisa Anderson',
       position: 'Chief Marketing Officer',
       company: 'Digital Solutions Ltd',
       rating: 5,
-      text: 'The digital marketing strategies implemented by Nexlogic Innovation Private Limited increased our online presence by 300%. Their data-driven approach delivers measurable results.',
+      text: 'The digital marketing strategies implemented by NexLogic Innovation Private Limited increased our online presence by 300%. Their data-driven approach delivers measurable results.',
     },
   ];
 

@@ -70,6 +70,7 @@ const Header = () => {
       icon: 'inventory_2',
       main: { name: 'View All Products', path: '/services' },
       items: [
+        { name: 'AI Recruitment Intelligence Platform', path: '/recruitment', icon: 'groups' },
         { name: 'BotMinds ADDU Agentic AI', path: '/products/botminds', icon: 'psychology' },
         { name: 'WhatsApp Business Solution', path: '/services/whatsapp-marketing', icon: 'chat' },
       ]

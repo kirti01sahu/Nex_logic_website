@@ -43,6 +43,7 @@ import {
   ConsultingPage,
   ResourcesPage,
   ProductsPage,
+  AIRecruitmentPage,
 } from './pages/OtherPages';
 
 // App Content Component that uses useFavicon inside ThemeProvider
@@ -66,6 +67,7 @@ function AppContent() {
               <Route path="/security" element={<SecurityPage />} />
               <Route path="/platform" element={<PlatformPage />} />
               <Route path="/industries" element={<IndustriesPage />} />
+              <Route path="/recruitment" element={<AIRecruitmentPage />} />
               <Route path="/consulting" element={<ConsultingPage />} />
               <Route path="/resources" element={<ResourcesPage />} />
               <Route path="/products" element={<ProductsPage />} />

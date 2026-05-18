@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+﻿import React, { useEffect, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -174,7 +174,7 @@ const DigitalMarketingPage = () => {
 
   const testimonials = [
     {
-      quote: "The digital marketing strategy from Nexlogic Innovation Private Limited transformed our online presence. We saw a 300% increase in organic traffic within just 3 months. Their team truly understands SEO and social media marketing!",
+      quote: "The digital marketing strategy from NexLogic Innovation Private Limited transformed our online presence. We saw a 300% increase in organic traffic within just 3 months. Their team truly understands SEO and social media marketing!",
       author: "Priya Sharma",
       position: "E-commerce Startup"
     },
@@ -184,7 +184,7 @@ const DigitalMarketingPage = () => {
       position: "SaaS Company"
     },
     {
-      quote: "Nexlogic Innovation Private Limited brought creativity and professionalism to our digital campaigns. Their content strategy and social media management helped us build a strong brand presence online.",
+      quote: "NexLogic Innovation Private Limited brought creativity and professionalism to our digital campaigns. Their content strategy and social media management helped us build a strong brand presence online.",
       author: "Anjali Reddy",
       position: "Healthcare Provider"
     },
@@ -194,12 +194,12 @@ const DigitalMarketingPage = () => {
       position: "Real Estate Firm"
     },
     {
-      quote: "Switching to Nexlogic Innovation Private Limited for our digital marketing was a game changer. Their holistic approach covering SEO, PPC, and social media gave us the edge over competitors.",
+      quote: "Switching to NexLogic Innovation Private Limited for our digital marketing was a game changer. Their holistic approach covering SEO, PPC, and social media gave us the edge over competitors.",
       author: "Sneha Patel",
       position: "Fashion Retail"
     },
     {
-      quote: "Professional, knowledgeable, and results-oriented. Nexlogic Innovation Private Limited helped us scale our digital presence from zero to hero. Highly recommend their services!",
+      quote: "Professional, knowledgeable, and results-oriented. NexLogic Innovation Private Limited helped us scale our digital presence from zero to hero. Highly recommend their services!",
       author: "Arjun Mehta",
       position: "Tech Startup"
     }
@@ -209,7 +209,7 @@ const DigitalMarketingPage = () => {
     <div>
       <SEOHead
         title="Digital Marketing Services"
-        description="Drive measurable growth with Nexlogic Innovation Private Limited's data-driven digital marketing — SEO, PPC, social media, and content strategy tailored for your business. Visit naxlogic.com."
+        description="Drive measurable growth with NexLogic Innovation Private Limited's data-driven digital marketing — SEO, PPC, social media, and content strategy tailored for your business. Visit naxlogic.com."
         canonical="https://naxlogic.com/digital-marketing"
       />
       {/* Hero Section */}

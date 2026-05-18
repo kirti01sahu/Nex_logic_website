@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -159,7 +159,7 @@ const CyberSecurityPage = () => {
     <div>
       <SEOHead
         title="Cybersecurity Solutions"
-        description="Protect your business with Nexlogic Innovation Private Limited's advanced cybersecurity services. AI-powered threat detection, compliance, and 24/7 security monitoring at naxlogic.com."
+        description="Protect your business with NexLogic Innovation Private Limited's advanced cybersecurity services. AI-powered threat detection, compliance, and 24/7 security monitoring at naxlogic.com."
         canonical="https://naxlogic.com/cyber-security"
       />
       {/* Hero Section */}}
@@ -176,7 +176,7 @@ const CyberSecurityPage = () => {
               Empowering Businesses with Next-Gen Cybersecurity Solutions
             </h1>
             <p className="hero-heading text-lg md:text-xl text-white/90 leading-relaxed max-w-3xl">
-              At Nexlogic Innovation Private Limited, we are dedicated to delivering state-of-the-art cybersecurity solutions that empower businesses to thrive in the digital age. Our advanced technologies and tailored strategies ensure robust protection against evolving cyber threats.
+              At NexLogic Innovation Private Limited, we are dedicated to delivering state-of-the-art cybersecurity solutions that empower businesses to thrive in the digital age. Our advanced technologies and tailored strategies ensure robust protection against evolving cyber threats.
             </p>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { useCallback } from 'react';
+﻿import { useCallback } from 'react';
 
 /**
  * Razorpay Payment Hook
@@ -27,7 +27,7 @@ const useRazorpay = () => {
     const {
       amount,
       currency = 'INR',
-      name = 'Nexlogic Innovation Private Limited',
+      name = 'NexLogic Innovation Private Limited',
       description = 'Service Subscription',
       planType = '',
       onSuccess,
@@ -57,7 +57,7 @@ const useRazorpay = () => {
       key: RAZORPAY_KEY_ID,
       amount: amountInSmallestUnit,
       currency: currency,
-      name: 'Nexlogic Innovation Private Limited',
+      name: 'NexLogic Innovation Private Limited',
       description: `${name} - ${description}`,
       handler: function (response) {
         // Payment success

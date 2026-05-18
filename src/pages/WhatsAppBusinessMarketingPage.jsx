@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -171,7 +171,7 @@ const WhatsAppBusinessMarketingPage = () => {
     <div>
       <SEOHead
         title="WhatsApp Business Marketing"
-        description="Engage customers at scale with Nexlogic Innovation Private Limited's WhatsApp Business marketing solutions — automated campaigns, chatbots, and rich media messaging. naxlogic.com"
+        description="Engage customers at scale with NexLogic Innovation Private Limited's WhatsApp Business marketing solutions — automated campaigns, chatbots, and rich media messaging. naxlogic.com"
         canonical="https://naxlogic.com/whatsapp-business-marketing"
       />
       {/* Hero Section */}}

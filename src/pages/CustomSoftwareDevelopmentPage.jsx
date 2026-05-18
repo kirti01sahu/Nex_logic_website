@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import SEOHead from '../components/SEOHead';
+import TechStack from '../components/TechStack';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -175,8 +176,8 @@ const CustomSoftwareDevelopmentPage = () => {
   return (
     <div>
       <SEOHead
-        title="Custom Software Development — Nexlogic"
-        description="Nexlogic Innovation Private Limited offers custom web, mobile and cloud software development tailored to your business needs. Get expert Nexlogic software solutions at naxlogic.com."
+        title="Custom Software Development — NexLogic"
+        description="NexLogic Innovation Private Limited offers custom web, mobile and cloud software development tailored to your business needs. Get expert NexLogic software solutions at naxlogic.com."
         canonical="/development/custom-software"
       />
       {/* Hero Section */}
@@ -291,54 +292,7 @@ const CustomSoftwareDevelopmentPage = () => {
         </div>
       </section>
 
-      {/* Technology Stack */}
-      <section className="py-16 md:py-24 bg-white dark:bg-charcoal">
-        <div className="container-custom px-4 md:px-6">
-          <div className="text-center mb-12 scroll-animate">
-            <h2 className="text-3xl md:text-4xl font-heading font-light text-charcoal dark:text-sandstone mb-4">
-              Technology Stack
-            </h2>
-            <p className="text-lg text-brown-grey dark:text-text-dark-muted max-w-3xl mx-auto">
-              Modern technologies for building robust software solutions
-            </p>
-          </div>
-          <div className="space-y-8 max-w-5xl mx-auto">
-            {Object.entries(technologies).map(([category, techs], index) => (
-              <div key={index} className="scroll-animate">
-                <h3 className="text-xl font-heading text-charcoal dark:text-sandstone mb-4 capitalize">
-                  {category}
-                </h3>
-                {category === 'mobile' ? (
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                    {techs.map((tech, idx) => (
-                      <div 
-                        key={idx} 
-                        className="bg-taupe/30 dark:bg-charcoal-light p-4 rounded-xl text-center hover:bg-[#2F4538] dark:hover:bg-[#C9D8BF] hover:scale-105 transition-all duration-300 group"
-                      >
-                        <img src={tech.logo} alt={tech.name} className="w-12 h-12 mx-auto mb-2 object-contain" />
-                        <span className="text-sm font-medium text-charcoal dark:text-sandstone group-hover:text-white dark:group-hover:text-[#2F3B35]">
-                          {tech.name}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div className="flex flex-wrap gap-3">
-                    {techs.map((tech, idx) => (
-                      <span 
-                        key={idx} 
-                        className="px-6 py-3 bg-taupe/30 dark:bg-charcoal-light text-charcoal dark:text-sandstone rounded-full text-sm font-medium hover:bg-[#2F4538] hover:text-white dark:hover:bg-[#C9D8BF] dark:hover:text-[#2F3B35] transition-all duration-300 cursor-default"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <TechStack />
 
       {/* Industries Served */}
       <section className="py-16 md:py-24 bg-taupe/30 dark:bg-charcoal-light">

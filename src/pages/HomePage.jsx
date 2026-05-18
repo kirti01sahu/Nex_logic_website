@@ -20,7 +20,7 @@ const homeSchema = {
       name: 'What is NexLogic?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'NexLogic Innovation Private Limited is a consulting-led technology company founded in 2026. NexLogic delivers AI development, custom software, ERP/CRM solutions, cybersecurity, and strategic consulting for enterprises, startups, and governments.',
+        text: 'NexLogic Innovation Private Limited is a technology company founded in 2026. NexLogic is a Software Development & AI Solutions company + Enterprise Recruitment Technology Provider. We deliver AI development, custom software, ERP/CRM solutions, cybersecurity, strategic consulting, AND AI-powered recruitment intelligence platform for enterprises, startups, and governments.',
       },
     },
     {
@@ -28,7 +28,15 @@ const homeSchema = {
       name: 'What services does NexLogic offer?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'NexLogic offers AI agentic development, custom software development, ERP/CRM implementation (SAP, Salesforce, Dynamics 365), cybersecurity, e-governance consulting, sales & growth consulting, and SaaS platforms.',
+        text: 'NexLogic offers: (1) Software: AI agentic development, custom software development, ERP/CRM implementation, cybersecurity, strategic consulting, and SaaS platforms. (2) Recruitment: AI resume screening, candidate ranking, online assessments, AI interview evaluation, and recruitment workflow automation through our AI Recruitment Intelligence Platform.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What is the NexLogic AI Recruitment Intelligence Platform?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'NexLogic AI Recruitment Intelligence Platform is an enterprise hiring automation solution. Features include: AI-powered resume screening and candidate ranking, bulk resume upload, semantic candidate matching, online assessments (MCQ, coding, AI interviews), hiring intelligence dashboards, and complete recruitment workflow automation.',
       },
     },
     {
@@ -78,18 +86,18 @@ const HomePage = () => {
               <span className="text-[8px] md:text-[9px] uppercase tracking-widest text-white/70 font-bold">Software Solutions</span>
             </div>
 
+            {/* AI Recruitment */}
+            <div className="text-center p-4 md:p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded hover:bg-white/10 transition-all duration-300">
+              <span className="material-symbols-outlined text-3xl md:text-4xl text-white/80 font-light mb-2 block">groups</span>
+              <span className="text-2xl md:text-3xl font-heading font-light text-white block mb-1">10k+</span>
+              <span className="text-[8px] md:text-[9px] uppercase tracking-widest text-white/70 font-bold">Candidates Screened</span>
+            </div>
+
             {/* Government Clients */}
             <div className="text-center p-4 md:p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded hover:bg-white/10 transition-all duration-300">
               <span className="material-symbols-outlined text-3xl md:text-4xl text-white/80 font-light mb-2 block">account_balance</span>
               <span className="text-2xl md:text-3xl font-heading font-light text-white block mb-1">10+</span>
               <span className="text-[8px] md:text-[9px] uppercase tracking-widest text-white/70 font-bold">Government Clients</span>
-            </div>
-
-            {/* Global Clients */}
-            <div className="text-center p-4 md:p-6 bg-white/5 backdrop-blur-sm border border-white/10 rounded hover:bg-white/10 transition-all duration-300">
-              <span className="material-symbols-outlined text-3xl md:text-4xl text-white/80 font-light mb-2 block">public</span>
-              <span className="text-2xl md:text-3xl font-heading font-light text-white block mb-1">100+</span>
-              <span className="text-[8px] md:text-[9px] uppercase tracking-widest text-white/70 font-bold">Global Clients</span>
             </div>
 
             {/* SaaS Downloads */}
@@ -115,58 +123,107 @@ const HomePage = () => {
             </p>
           </div>
           
-          <div className="relative w-full max-w-4xl mx-auto" style={{ aspectRatio: '1 / 1', maxHeight: '700px' }}>
-            {/* SVG Connection Lines */}
-            <svg className="absolute inset-0 w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
-              {/* Vertical line */}
-              <line x1="50" y1="10" x2="50" y2="90" stroke="currentColor" strokeWidth="0.15" className="text-[#2F3B35]/20 dark:text-white/20" />
-              {/* Horizontal line */}
-              <line x1="10" y1="50" x2="90" y2="50" stroke="currentColor" strokeWidth="0.15" className="text-[#2F3B35]/20 dark:text-white/20" />
-            </svg>
-            
-            {/* Grid Container */}
-            <div className="absolute inset-0 grid grid-cols-3 grid-rows-3 gap-0 p-4 sm:p-6 md:p-8">
-              
+          <div className="w-full max-w-4xl mx-auto">
+            {/* Desktop Layout */}
+            <div className="hidden md:grid grid-cols-3 gap-12 items-center justify-items-center relative py-16">
               {/* Top Center - Legacy ERP */}
-              <div className="col-start-2 row-start-1 flex items-end justify-center pb-2 sm:pb-3 md:pb-4">
-                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl flex items-center gap-2 sm:gap-3 md:gap-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-lg sm:text-xl md:text-2xl lg:text-3xl">storage</span>
-                  <span className="text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-bold uppercase tracking-[0.15em] md:tracking-[0.2em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">LEGACY ERP</span>
+              <div className="col-span-3 flex justify-center relative mb-8">
+                {/* Vertical line from top card to center */}
+                <div className="absolute top-full w-0.5 h-8 bg-gradient-to-b from-[#2F3B35]/20 to-transparent dark:from-white/20 left-1/2 transform -translate-x-1/2"></div>
+                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-6 py-3 lg:px-8 lg:py-4 rounded-lg lg:rounded-xl flex items-center gap-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative z-10">
+                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-2xl lg:text-3xl">storage</span>
+                  <span className="text-xs lg:text-sm font-bold uppercase tracking-[0.2em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">LEGACY ERP</span>
                 </div>
               </div>
-              
-              {/* Middle Right - CRM Hub */}
-              <div className="col-start-3 row-start-2 flex items-center justify-start pl-2 sm:pl-3 md:pl-4">
-                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl flex items-center gap-2 sm:gap-3 md:gap-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-lg sm:text-xl md:text-2xl lg:text-3xl">groups</span>
-                  <span className="text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-bold uppercase tracking-[0.15em] md:tracking-[0.2em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">CRM HUB</span>
+
+              {/* Middle Row with horizontal connectors */}
+              <div className="relative flex items-center justify-center">
+                {/* Connector line to center */}
+                <div className="absolute -right-6 w-6 h-0.5 bg-gradient-to-r from-[#2F3B35]/20 to-transparent dark:from-white/20"></div>
+                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-6 py-3 lg:px-8 lg:py-4 rounded-lg lg:rounded-xl flex items-center gap-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative z-10">
+                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-2xl lg:text-3xl">lan</span>
+                  <span className="text-xs lg:text-sm font-bold uppercase tracking-[0.2em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">ON-PREM</span>
                 </div>
               </div>
-              
+
               {/* Center - AI Engine */}
-              <div className="col-start-2 row-start-2 flex items-center justify-center">
+              <div className="flex items-center justify-center relative">
+                {/* Vertical connector lines */}
+                <div className="absolute -top-8 w-0.5 h-8 bg-gradient-to-b from-transparent to-[#2F3B35]/20 dark:to-white/20 left-1/2 transform -translate-x-1/2"></div>
+                <div className="absolute -bottom-8 w-0.5 h-8 bg-gradient-to-t from-transparent to-[#2F3B35]/20 dark:to-white/20 left-1/2 transform -translate-x-1/2"></div>
+                
                 <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-44 lg:h-44 bg-[#1F1F1F] dark:bg-[#0F0F0F] rounded-full flex flex-col items-center justify-center text-white shadow-[0_20px_60px_rgba(0,0,0,0.6)] dark:shadow-[0_20px_80px_rgba(0,0,0,0.9)] ring-2 sm:ring-3 md:ring-4 ring-white/20 dark:ring-white/30 relative z-10">
                   <span className="material-symbols-outlined text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light">grain</span>
                   <span className="font-bold text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs uppercase mt-1 sm:mt-2 md:mt-3 tracking-[0.2em] sm:tracking-[0.25em]">AI ENGINE</span>
                 </div>
               </div>
-              
-              {/* Middle Left - On-Prem */}
-              <div className="col-start-1 row-start-2 flex items-center justify-end pr-2 sm:pr-3 md:pr-4">
-                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl flex items-center gap-2 sm:gap-3 md:gap-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-lg sm:text-xl md:text-2xl lg:text-3xl">lan</span>
-                  <span className="text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-bold uppercase tracking-[0.15em] md:tracking-[0.2em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">ON-PREM</span>
+
+              {/* Middle Right - CRM Hub */}
+              <div className="relative flex items-center justify-center">
+                {/* Connector line to center */}
+                <div className="absolute -left-6 w-6 h-0.5 bg-gradient-to-l from-[#2F3B35]/20 to-transparent dark:from-white/20"></div>
+                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-6 py-3 lg:px-8 lg:py-4 rounded-lg lg:rounded-xl flex items-center gap-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative z-10">
+                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-2xl lg:text-3xl">groups</span>
+                  <span className="text-xs lg:text-sm font-bold uppercase tracking-[0.2em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">CRM HUB</span>
                 </div>
               </div>
-              
+
               {/* Bottom Center - SaaS Stack */}
-              <div className="col-start-2 row-start-3 flex items-start justify-center pt-2 sm:pt-3 md:pt-4">
-                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-3 py-2 sm:px-4 sm:py-2.5 md:px-6 md:py-3 lg:px-8 lg:py-4 rounded-lg md:rounded-xl flex items-center gap-2 sm:gap-3 md:gap-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-lg sm:text-xl md:text-2xl lg:text-3xl">cloud_done</span>
-                  <span className="text-[9px] sm:text-[10px] md:text-xs lg:text-sm font-bold uppercase tracking-[0.15em] md:tracking-[0.2em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">SAAS STACK</span>
+              <div className="col-span-3 flex justify-center relative mt-8">
+                {/* Vertical line from center to bottom card */}
+                <div className="absolute bottom-full w-0.5 h-8 bg-gradient-to-t from-[#2F3B35]/20 to-transparent dark:from-white/20 left-1/2 transform -translate-x-1/2"></div>
+                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-6 py-3 lg:px-8 lg:py-4 rounded-lg lg:rounded-xl flex items-center gap-4 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 relative z-10">
+                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-2xl lg:text-3xl">cloud_done</span>
+                  <span className="text-xs lg:text-sm font-bold uppercase tracking-[0.2em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">SAAS STACK</span>
                 </div>
               </div>
-              
+            </div>
+
+            {/* Mobile Layout */}
+            <div className="md:hidden flex flex-col items-center space-y-6">
+              {/* Top - Legacy ERP */}
+              <div className="w-full flex justify-center">
+                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-4 py-2 sm:px-6 sm:py-3 rounded-lg flex items-center gap-2 sm:gap-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-lg sm:text-xl">storage</span>
+                  <span className="text-[9px] sm:text-xs font-bold uppercase tracking-[0.15em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">LEGACY ERP</span>
+                </div>
+              </div>
+              <div className="w-0.5 h-4 bg-gradient-to-b from-[#2F3B35]/20 to-transparent dark:from-white/20"></div>
+
+              {/* On-Prem */}
+              <div className="w-full flex justify-center">
+                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-4 py-2 sm:px-6 sm:py-3 rounded-lg flex items-center gap-2 sm:gap-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-lg sm:text-xl">lan</span>
+                  <span className="text-[9px] sm:text-xs font-bold uppercase tracking-[0.15em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">ON-PREM</span>
+                </div>
+              </div>
+              <div className="w-0.5 h-4 bg-gradient-to-b from-[#2F3B35]/20 to-transparent dark:from-white/20"></div>
+
+              {/* AI Engine */}
+              <div className="w-full flex justify-center py-4">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 bg-[#1F1F1F] dark:bg-[#0F0F0F] rounded-full flex flex-col items-center justify-center text-white shadow-[0_20px_60px_rgba(0,0,0,0.6)] dark:shadow-[0_20px_80px_rgba(0,0,0,0.9)] ring-2 ring-white/20 dark:ring-white/30">
+                  <span className="material-symbols-outlined text-2xl sm:text-3xl font-light">grain</span>
+                  <span className="font-bold text-[7px] sm:text-[8px] uppercase mt-1 tracking-[0.2em]">AI ENGINE</span>
+                </div>
+              </div>
+              <div className="w-0.5 h-4 bg-gradient-to-b from-[#2F3B35]/20 to-transparent dark:from-white/20"></div>
+
+              {/* CRM Hub */}
+              <div className="w-full flex justify-center">
+                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-4 py-2 sm:px-6 sm:py-3 rounded-lg flex items-center gap-2 sm:gap-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-lg sm:text-xl">groups</span>
+                  <span className="text-[9px] sm:text-xs font-bold uppercase tracking-[0.15em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">CRM HUB</span>
+                </div>
+              </div>
+              <div className="w-0.5 h-4 bg-gradient-to-b from-[#2F3B35]/20 to-transparent dark:from-white/20"></div>
+
+              {/* SaaS Stack */}
+              <div className="w-full flex justify-center">
+                <div className="bg-[#E8DDD0] dark:bg-charcoal-light border border-[#2F3B35]/10 dark:border-white/15 px-4 py-2 sm:px-6 sm:py-3 rounded-lg flex items-center gap-2 sm:gap-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                  <span className="material-symbols-outlined text-[#2F3B35] dark:text-sandstone font-light text-lg sm:text-xl">cloud_done</span>
+                  <span className="text-[9px] sm:text-xs font-bold uppercase tracking-[0.15em] text-[#2F3B35] dark:text-sandstone whitespace-nowrap">SAAS STACK</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -177,13 +234,23 @@ const HomePage = () => {
         <div className="container-custom px-4 md:px-6 max-w-4xl mx-auto text-center">
           <span className="text-[10px] uppercase tracking-widest font-bold text-white/50 mb-4 block">ABOUT NexLogic</span>
           <h2 className="text-3xl md:text-4xl font-heading font-light text-white mb-6">
-            What is NexLogic?
+            Technology Solutions & Recruitment Platform Company
           </h2>
           <p className="text-white/80 text-lg leading-relaxed mb-4">
-            <strong className="text-white">NexLogic Innovation Private Limited</strong> is a consulting-led technology company headquartered in Bhopal, India. NexLogic (operating at <strong className="text-white">naxlogic.com</strong>) specialises in AI-powered platforms, custom software development, ERP/CRM solutions, and strategic business consulting for enterprises, startups, and governments.
+            <strong className="text-white">NexLogic Innovation Private Limited</strong> is a technology company headquartered in Bhopal, India. We operate as both:
           </p>
+          <div className="grid md:grid-cols-2 gap-8 mb-6">
+            <div>
+              <h3 className="text-xl font-semibold text-sandstone mb-3">Software & AI Solutions</h3>
+              <p className="text-white/70 text-sm">Custom software development, AI agents, ERP/CRM systems, cloud solutions, SaaS platforms, and enterprise consulting.</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-sandstone mb-3">AI Recruitment Platform</h3>
+              <p className="text-white/70 text-sm">Enterprise hiring automation with AI resume screening, candidate ranking, assessments, and recruitment workflow automation.</p>
+            </div>
+          </div>
           <p className="text-white/70 text-base leading-relaxed">
-            Looking for <em>NexLogic company</em> or <em>NexLogic software solutions</em>? You have found us. naxlogic.com is the official digital home of NexLogic Innovation Private Limited.
+            NexLogic (operating at <strong className="text-white">naxlogic.com</strong>) combines software expertise with recruitment intelligence to deliver enterprise technology solutions and talent acquisition automation.
           </p>
         </div>
       </section>
@@ -202,16 +269,16 @@ const HomePage = () => {
                 a: 'Yes. naxlogic.com is the official website of NexLogic Innovation Private Limited. The brand name is NexLogic and the domain is naxlogic.com.',
               },
               {
-                q: 'What does NexLogic Innovation Private Limited do?',
-                a: 'NexLogic is a full-service technology and consulting company. We build AI agents, enterprise software, CRM/ERP systems, SaaS platforms, and deliver strategic consulting for businesses and governments across India.',
+                q: 'What is NexLogic?',
+                a: 'NexLogic is a Software Development & AI Solutions company + Enterprise Recruitment Technology Provider. We build custom software, AI agents, ERP/CRM systems, SaaS platforms, strategic consulting, AND an AI Recruitment Intelligence Platform for enterprise hiring automation.',
+              },
+              {
+                q: 'What is the NexLogic AI Recruitment Intelligence Platform?',
+                a: 'Our AI Recruitment Platform automates the entire hiring workflow: AI resume screening, semantic candidate ranking, bulk uploads, online assessments (MCQ, coding, AI interviews), hiring intelligence dashboards, and workflow automation to reduce hiring time by up to 60%.',
               },
               {
                 q: 'How can I contact NexLogic?',
                 a: 'Reach NexLogic Innovation Private Limited at info@naxlogic.com or call +91 9893220811. Our office is at MANIT Incubation Center, Bhopal, Madhya Pradesh, India.',
-              },
-              {
-                q: 'Does NexLogic develop AI solutions?',
-                a: 'Yes. NexLogic AI development includes autonomous AI agents, LLM integration (GPT-4, Claude, Llama), RAG architecture, multi-agent systems, and custom AI model fine-tuning for enterprise clients.',
               },
             ].map(({ q, a }, i) => (
               <div key={i} className="bg-white/70 dark:bg-charcoal-light rounded-xl p-6 shadow-sm">

@@ -1,7 +1,7 @@
-import React from 'react';
+﻿import React from 'react';
 import { Helmet } from 'react-helmet-async';
 
-const SITE_NAME = 'Nexlogic Innovation Private Limited';
+const SITE_NAME = 'NexLogic Innovation Private Limited';
 const SITE_URL = 'https://naxlogic.com';
 const DEFAULT_IMAGE = `${SITE_URL}/og-image.png`;
 
@@ -15,12 +15,12 @@ const SEOHead = ({
   schema = null,
 }) => {
   const fullTitle = title
-    ? `Nexlogic | ${title} | naxlogic.com`
-    : 'Nexlogic Innovation Private Limited | Software, AI & Consulting | naxlogic.com';
+    ? `NexLogic | ${title} | naxlogic.com`
+    : 'NexLogic Innovation Private Limited | Software, AI & Consulting | naxlogic.com';
 
   const metaDescription =
     description ||
-    'Nexlogic Innovation Private Limited (naxlogic.com) delivers AI development, custom software, ERP/CRM, and strategic consulting. Search for Nexlogic — you have found us.';
+    'NexLogic Innovation Private Limited (naxlogic.com) delivers AI development, custom software, ERP/CRM, and strategic consulting. Search for NexLogic — you have found us.';
 
   const canonicalURL = canonical ? `${SITE_URL}${canonical}` : SITE_URL;
 
@@ -49,7 +49,7 @@ const SEOHead = ({
       {/* Brand association keywords */}
       <meta
         name="keywords"
-        content="Nexlogic, Nexlogic Innovation Private Limited, Nexlogic software, Nexlogic AI, Nexlogic company, naxlogic, naxlogic.com, software development India, AI solutions, CRM development, ERP consulting"
+        content="NexLogic, NexLogic Innovation Private Limited, NexLogic software, NexLogic AI, NexLogic company, naxlogic, naxlogic.com, software development India, AI solutions, CRM development, ERP consulting"
       />
 
       {/* Per-page schema if passed */}

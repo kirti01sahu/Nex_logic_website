@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -253,8 +253,8 @@ const ERPCRMDevelopmentPage = () => {
   return (
     <div>
       <SEOHead
-        title="ERP & CRM Development — Nexlogic Software Solutions"
-        description="Nexlogic Innovation Private Limited implements SAP, Microsoft Dynamics, Oracle, Salesforce and custom ERP/CRM solutions. Expert Nexlogic CRM development at naxlogic.com."
+        title="ERP & CRM Development — NexLogic Software Solutions"
+        description="NexLogic Innovation Private Limited implements SAP, Microsoft Dynamics, Oracle, Salesforce and custom ERP/CRM solutions. Expert NexLogic CRM development at naxlogic.com."
         canonical="/development/erp-crm"
       />
       {/* Hero Section */}

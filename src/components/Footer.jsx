@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+﻿import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
 import DottedMap from 'dotted-map';
@@ -80,6 +80,7 @@ const Footer = () => {
           <div>
             <div className="mb-4 md:mb-6">
               <TextLogo
+                forceDarkLogo={true}
                 titleClassName="text-base md:text-lg font-semibold tracking-widest uppercase text-sandstone dark:text-sandstone"
                 taglineClassName="text-[10px] md:text-xs text-text-dark-muted dark:text-text-dark-muted italic -mt-1"
               />
@@ -210,7 +211,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="pt-6 md:pt-8 border-t border-sandstone/10 dark:border-sandstone/10 flex flex-col md:flex-row justify-between items-center gap-4 md:gap-6">
           <p className="text-[9px] uppercase tracking-widest text-text-dark-muted/60 dark:text-text-dark-muted/60 text-center md:text-left">
-            © {new Date().getFullYear()} Nexlogic Innovation Private Limited. All rights reserved.
+            © {new Date().getFullYear()} NexLogic Innovation Private Limited. All rights reserved.
           </p>
           <div className="flex gap-8 md:gap-12 text-[9px] uppercase tracking-widest text-text-dark-muted/60 dark:text-text-dark-muted/60">
             <Link to="/privacy" className="hover:text-sandstone dark:hover:text-sandstone transition-colors">Privacy</Link>

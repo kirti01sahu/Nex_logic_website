@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -71,10 +71,10 @@ const SoftwareDevelopmentPage = () => {
         <div className="container-custom px-4 md:px-6 py-16 md:py-24 relative z-10">
           <div className="max-w-4xl">
             <h1 className="hero-heading text-4xl md:text-5xl lg:text-6xl font-heading font-light text-white mb-6 leading-tight">
-              Welcome to Nexlogic Innovation Private Limited: Your Partner in Website Development
+              Welcome to NexLogic Innovation Private Limited: Your Partner in Website Development
             </h1>
             <p className="hero-heading text-lg md:text-xl text-white/90 leading-relaxed">
-              At Nexlogic Innovation Private Limited, we specialize in crafting dynamic and engaging websites that help businesses thrive in the digital age. With a team of experienced developers and designers, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to your unique needs.
+              At NexLogic Innovation Private Limited, we specialize in crafting dynamic and engaging websites that help businesses thrive in the digital age. With a team of experienced developers and designers, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to your unique needs.
             </p>
           </div>
         </div>

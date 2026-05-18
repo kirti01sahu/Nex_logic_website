@@ -1,4 +1,4 @@
-# robots.txt — Nexlogic Innovation Private Limited (naxlogic.com)
+﻿# robots.txt — NexLogic Innovation Private Limited (naxlogic.com)
 # Generated: 2026-04-07
 
 User-agent: *

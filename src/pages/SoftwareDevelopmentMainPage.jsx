@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -89,8 +89,8 @@ const SoftwareDevelopmentMainPage = () => {
   return (
     <div>
       <SEOHead
-        title="Software Development Services — Nexlogic"
-        description="Nexlogic Innovation Private Limited's next-gen software development services: AI, custom apps, ERP/CRM, cloud and more. Nexlogic software development at naxlogic.com."
+        title="Software Development Services — NexLogic"
+        description="NexLogic Innovation Private Limited's next-gen software development services: AI, custom apps, ERP/CRM, cloud and more. NexLogic software development at naxlogic.com."
         canonical="/development"
       />
       {/* Hero Section */}
@@ -102,7 +102,7 @@ const SoftwareDevelopmentMainPage = () => {
               Your Partner in Next-Gen Solutions
             </h1>
             <p className="hero-heading text-lg md:text-xl text-white/90 leading-relaxed">
-              At Nexlogic Innovation Private Limited, we specialize in crafting dynamic and innovative solutions that help businesses thrive in the digital age. With experienced developers and designers, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to your unique needs.
+              At NexLogic Innovation Private Limited, we specialize in crafting dynamic and innovative solutions that help businesses thrive in the digital age. With experienced developers and designers, we combine creativity, innovation, and technical expertise to deliver bespoke solutions tailored to your unique needs.
             </p>
           </div>
         </div>

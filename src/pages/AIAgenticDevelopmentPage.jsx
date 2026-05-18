@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+﻿import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -157,8 +157,8 @@ const AIAgenticDevelopmentPage = () => {
   return (
     <div>
       <SEOHead
-        title="AI Agentic Development — Nexlogic"
-        description="Nexlogic Innovation Private Limited builds autonomous AI agents, multi-agent systems, and LLM-integrated platforms. Enterprise-grade AI agentic development at naxlogic.com."
+        title="AI Agentic Development — NexLogic"
+        description="NexLogic Innovation Private Limited builds autonomous AI agents, multi-agent systems, and LLM-integrated platforms. Enterprise-grade AI agentic development at naxlogic.com."
         canonical="/development/ai-agentic"
       />
       {/* Hero Section */}}

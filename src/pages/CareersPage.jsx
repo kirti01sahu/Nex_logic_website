@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+﻿import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { supabase } from '../firebase/config';
 import SEOHead from '../components/SEOHead';
@@ -142,8 +142,8 @@ const CareersPage = () => {
   return (
     <div>
       <SEOHead
-        title="Careers at Nexlogic Innovation Private Limited"
-        description="Join Nexlogic Innovation Private Limited (naxlogic.com). Explore careers in AI, software engineering, consulting and more. Shape the future with us."
+        title="Careers at NexLogic Innovation Private Limited"
+        description="Join NexLogic Innovation Private Limited (naxlogic.com). Explore careers in AI, software engineering, consulting and more. Shape the future with us."
         canonical="/careers"
       />
       {/* Hero Section */}
@@ -152,10 +152,10 @@ const CareersPage = () => {
         <div className="container-custom px-4 md:px-6 py-20 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-light text-white mb-6 leading-tight tracking-wide">
-              Careers at Nexlogic
+              Careers at NexLogic
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Join our team of innovators, creators, and problem-solvers. Build the future with Nexlogic Innovation Private Limited.
+              Join our team of innovators, creators, and problem-solvers. Build the future with NexLogic Innovation Private Limited.
             </p>
           </div>
         </div>

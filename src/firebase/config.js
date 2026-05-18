@@ -1,4 +1,4 @@
-// Supabase configuration
+﻿// Supabase configuration
 // Replace these values with your actual Supabase project configuration
 // You can find these values in your Supabase Dashboard -> Project Settings -> API
 
@@ -11,8 +11,8 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 // Admin credentials (hardcoded for security - only for admin login)
 export const ADMIN_CREDENTIALS = {
-  userId: 'Nexlogic19',
-  password: '@#!Nexlogic26'
+  userId: 'NexLogic19',
+  password: '@#!NexLogic26'
 };
 
 export default supabase;

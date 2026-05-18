@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import ScrollAnimation from '../components/ScrollAnimation';
 import SEOHead from '../components/SEOHead';
@@ -76,6 +76,14 @@ const ServicesPage = () => {
 
   const products = [
     {
+      title: 'AI Recruitment Intelligence Platform',
+      description: 'Enterprise hiring automation with AI-powered resume screening, candidate ranking, and recruitment workflow automation.',
+      path: '/recruitment',
+      features: ['AI Resume Screening', 'Candidate Ranking', 'Online Assessments', 'Hiring Dashboards'],
+      bgColor: 'bg-[#2F4538]',
+      textColor: 'text-[#F7F3ED]'
+    },
+    {
       title: 'BotMinds ADDU Agentic AI - AI Automation Platform',
       description: 'AI-powered automation platform that reduces IT burden and boosts productivity.',
       path: '/products/botminds',
@@ -96,8 +104,8 @@ const ServicesPage = () => {
   return (
     <div>
       <SEOHead
-        title="Services — Nexlogic Software, AI & Consulting Solutions"
-        description="Explore Nexlogic Innovation Private Limited's full range of services: AI development, custom software, ERP/CRM, cybersecurity, and strategic consulting. naxlogic.com"
+        title="Services — NexLogic Software, AI & Consulting Solutions"
+        description="Explore NexLogic Innovation Private Limited's full range of services: AI development, custom software, ERP/CRM, cybersecurity, and strategic consulting. naxlogic.com"
         canonical="/services"
       />
       {/* Hero Section */}}
