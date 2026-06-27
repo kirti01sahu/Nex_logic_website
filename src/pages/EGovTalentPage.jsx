@@ -212,7 +212,9 @@ const EGovTalentPage = () => {
                     Book Demo
                   </button>
                   <button
-                    onClick={() => setIsVideoModalOpen(true)}
+                    onClick={() => {
+                      window.location.href = 'https://egovtalent.com/';
+                    }}
                     className="flex items-center gap-2 bg-[#384F3E]/5 dark:bg-white/5 border border-charcoal/10 dark:border-white/20 hover:bg-charcoal/5 dark:hover:bg-white/10 text-charcoal dark:text-white px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all hover:scale-105"
                   >
                     <span className="material-symbols-outlined text-lg">play_circle</span>

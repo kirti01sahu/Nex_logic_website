@@ -19,20 +19,7 @@ const FloatingWidget = () => {
 
   const handleTourClick = () => {
     setIsOpen(false);
-    if (location.pathname === '/egovtalent') {
-      const element = document.getElementById('showcase');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-        return;
-      }
-    }
-    navigate('/egovtalent#showcase');
-    setTimeout(() => {
-      const element = document.getElementById('showcase');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
+    window.location.href = 'https://egovtalent.com/';
   };
 
   const handleDemoClick = () => {

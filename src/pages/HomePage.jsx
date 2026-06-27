@@ -244,8 +244,7 @@ const HomePage = () => {
                 </Link>
                 <button
                   onClick={() => {
-                    setModalVideoSrc('/landing_video.mp4');
-                    setIsVideoModalOpen(true);
+                    window.location.href = 'https://egovtalent.com/';
                   }}
                   className="flex items-center gap-2 bg-white dark:bg-charcoal text-charcoal dark:text-white border border-charcoal/10 dark:border-white/10 px-8 py-3.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all hover:scale-105 hover:bg-gray-100 dark:hover:bg-charcoal/80"
                 >
