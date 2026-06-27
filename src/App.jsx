@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 
 // Pages
 import HomePage from './pages/HomePage';
+import EGovTalentPage from './pages/EGovTalentPage';
+import FloatingWidget from './components/FloatingWidget';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
@@ -41,7 +43,6 @@ import {
   PlatformPage,
   IndustriesPage,
   ConsultingPage,
-  ResourcesPage,
   ProductsPage,
   AIRecruitmentPage,
 } from './pages/OtherPages';
@@ -55,10 +56,12 @@ function AppContent() {
       <ScrollToTop />
       <div className="min-h-screen flex flex-col">
         <Header />
+        <FloatingWidget />
         <main className="flex-grow">
           <Routes>
               {/* Main Pages */}
               <Route path="/" element={<HomePage />} />
+              <Route path="/egovtalent" element={<EGovTalentPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/services" element={<ServicesPage />} />
               <Route path="/contact" element={<ContactPage />} />
@@ -69,7 +72,6 @@ function AppContent() {
               <Route path="/industries" element={<IndustriesPage />} />
               <Route path="/recruitment" element={<AIRecruitmentPage />} />
               <Route path="/consulting" element={<ConsultingPage />} />
-              <Route path="/resources" element={<ResourcesPage />} />
               <Route path="/products" element={<ProductsPage />} />
               <Route path="/careers" element={<CareersPage />} />
               <Route path="/admin-login" element={<AdminLoginPage />} />

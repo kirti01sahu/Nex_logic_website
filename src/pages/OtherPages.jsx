@@ -210,7 +210,7 @@ export const ProductsPage = () => (
           <ScrollAnimation>
             <div className="space-y-6">
               {[
-                { title: 'Online Assessments', desc: 'MCQ tests, coding evaluations, and AI interviews', icon: 'quiz' },
+                { title: 'Online Assessments', desc: 'MCQ tests, HR Interviews, and AI interviews', icon: 'quiz' },
                 { title: 'Screening Dashboard', desc: 'Centralized view of all candidates and pipeline', icon: 'dashboard' },
                 { title: 'Recruitment Automation', desc: 'Streamline workflows from screening to hiring', icon: 'automation' },
               ].map((feature, idx) => (
@@ -409,9 +409,9 @@ export const AIRecruitmentPage = () => (
               icon: 'quiz'
             },
             {
-              title: 'Coding Evaluations',
-              desc: 'Real-time coding assessments for developers with auto-grading and performance metrics.',
-              icon: 'code'
+              title: 'HR Interviews',
+              desc: 'Real-time HR interview assessments with auto-grading and performance metrics.',
+              icon: 'record_voice_over'
             },
             {
               title: 'AI Interview Evaluation',

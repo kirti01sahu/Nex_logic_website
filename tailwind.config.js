@@ -31,6 +31,11 @@ export default {
           light: '#8B8680',
           dark: '#5A5650',
         },
+        // Brand Identity Colors for eGovTalent Centric Premium Design
+        'sage-green': '#A8B5A2',
+        'dark-olive': '#384F3E',
+        'cream': '#F9F6F2',
+        'sandstone-light': '#F5F1ED',
         primary: {
           DEFAULT: '#1F1F1F', // Charcoal for primary actions
           dark: '#0F0F0F',

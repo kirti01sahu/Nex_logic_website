@@ -6,6 +6,7 @@ const AdminDashboardPage = () => {
   const [activeTab, setActiveTab] = useState('jobs');
   const [jobs, setJobs] = useState([]);
   const [applications, setApplications] = useState([]);
+  const [demoBookings, setDemoBookings] = useState([]);
   const [showJobForm, setShowJobForm] = useState(false);
   const [editingJob, setEditingJob] = useState(null);
   const navigate = useNavigate();
@@ -29,6 +30,7 @@ const AdminDashboardPage = () => {
     } else {
       fetchJobs();
       fetchApplications();
+      fetchDemoBookings();
     }
   }, [navigate]);
 
@@ -57,6 +59,38 @@ const AdminDashboardPage = () => {
       setApplications(data || []);
     } catch (error) {
       console.error('Error fetching applications:', error);
+    }
+  };
+
+  const fetchDemoBookings = async () => {
+    try {
+      const { data, error } = await supabase
+        .from('demo_bookings')
+        .select('*')
+        .order('created_at', { ascending: false });
+      
+      if (error) throw error;
+      setDemoBookings(data || []);
+    } catch (error) {
+      console.error('Error fetching demo bookings:', error);
+    }
+  };
+
+  const handleDeleteDemoBooking = async (bookingId) => {
+    if (window.confirm('Are you sure you want to delete this demo booking? This cannot be undone.')) {
+      try {
+        const { error } = await supabase
+          .from('demo_bookings')
+          .delete()
+          .eq('id', bookingId);
+        
+        if (error) throw error;
+        fetchDemoBookings();
+        alert('Demo booking deleted successfully!');
+      } catch (error) {
+        console.error('Error deleting demo booking:', error);
+        alert('Error deleting demo booking: ' + error.message);
+      }
     }
   };
 
@@ -211,6 +245,16 @@ const AdminDashboardPage = () => {
             }`}
           >
             Applications ({applications.length})
+          </button>
+          <button
+            onClick={() => setActiveTab('demos')}
+            className={`pb-4 px-6 text-sm uppercase tracking-widest font-medium transition-all duration-300 ${
+              activeTab === 'demos'
+                ? 'border-b-2 border-charcoal dark:border-sandstone text-charcoal dark:text-sandstone'
+                : 'text-brown-grey dark:text-text-dark-muted hover:text-charcoal dark:hover:text-sandstone'
+            }`}
+          >
+            Demo Bookings ({demoBookings.length})
           </button>
         </div>
 
@@ -548,6 +592,59 @@ const AdminDashboardPage = () => {
                     </div>
                   );
                 })}
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Demo Bookings Tab */}
+        {activeTab === 'demos' && (
+          <div>
+            <h2 className="text-2xl font-heading text-charcoal dark:text-sandstone mb-6">
+              eGovTalent Demo Bookings
+            </h2>
+
+            {demoBookings.length === 0 ? (
+              <div className="bg-white dark:bg-charcoal-light p-8 rounded-xl text-center shadow-warm border border-charcoal/5">
+                <p className="text-brown-grey dark:text-text-dark-muted font-light">No demo bookings received yet.</p>
+              </div>
+            ) : (
+              <div className="overflow-x-auto bg-white dark:bg-charcoal-light rounded-xl shadow-warm border border-charcoal/5">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="bg-taupe/10 dark:bg-charcoal border-b border-charcoal/10 dark:border-sandstone/10">
+                      <th className="p-4 text-xs uppercase tracking-wider font-bold text-charcoal dark:text-sandstone">Name</th>
+                      <th className="p-4 text-xs uppercase tracking-wider font-bold text-charcoal dark:text-sandstone">Email</th>
+                      <th className="p-4 text-xs uppercase tracking-wider font-bold text-charcoal dark:text-sandstone">Phone</th>
+                      <th className="p-4 text-xs uppercase tracking-wider font-bold text-charcoal dark:text-sandstone">Organization</th>
+                      <th className="p-4 text-xs uppercase tracking-wider font-bold text-charcoal dark:text-sandstone">Hiring Volume</th>
+                      <th className="p-4 text-xs uppercase tracking-wider font-bold text-charcoal dark:text-sandstone">Submitted At</th>
+                      <th className="p-4 text-xs uppercase tracking-wider font-bold text-charcoal dark:text-sandstone">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {demoBookings.map((booking) => (
+                      <tr key={booking.id} className="border-b border-charcoal/5 dark:border-white/5 hover:bg-taupe/5 transition-colors">
+                        <td className="p-4 text-sm font-medium text-charcoal dark:text-sandstone">{booking.name}</td>
+                        <td className="p-4 text-sm text-brown-grey dark:text-text-dark-muted">{booking.email}</td>
+                        <td className="p-4 text-sm text-brown-grey dark:text-text-dark-muted">{booking.phone}</td>
+                        <td className="p-4 text-sm text-[#384F3E] dark:text-sage-green font-semibold">{booking.organization}</td>
+                        <td className="p-4 text-sm text-brown-grey dark:text-text-dark-muted">{booking.hiring_volume || 'N/A'}</td>
+                        <td className="p-4 text-xs text-brown-grey dark:text-text-dark-muted">
+                          {new Date(booking.created_at).toLocaleString()}
+                        </td>
+                        <td className="p-4">
+                          <button
+                            onClick={() => handleDeleteDemoBooking(booking.id)}
+                            className="text-red-600 hover:text-red-800 text-xs font-bold uppercase tracking-wider transition-colors"
+                          >
+                            Delete
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             )}
           </div>

@@ -38,11 +38,13 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2000&auto=format&fit=crop"
-          alt="Landing Background"
+        <video
+          src="/landing_video.mp4"
+          autoPlay
+          loop
+          muted
           className="absolute inset-0 w-full h-full object-cover"
         />
         {/* Video/Image Overlay */}

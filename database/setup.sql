@@ -150,3 +150,41 @@ WHERE table_name = 'applications';
 SELECT schemaname, tablename, policyname, permissive, roles, cmd, qual 
 FROM pg_policies 
 WHERE tablename IN ('jobs', 'applications');
+
+
+-- =====================================================
+-- STEP 4: Create Demo Bookings Table
+-- =====================================================
+
+CREATE TABLE IF NOT EXISTS demo_bookings (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL,
+  phone TEXT NOT NULL,
+  organization TEXT NOT NULL,
+  hiring_volume TEXT,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  status TEXT DEFAULT 'pending'
+);
+
+-- Enable Row Level Security
+ALTER TABLE demo_bookings ENABLE ROW LEVEL SECURITY;
+
+-- Policy: Anyone can submit demo bookings
+DROP POLICY IF EXISTS "Anyone can insert demo bookings" ON demo_bookings;
+CREATE POLICY "Anyone can insert demo bookings"
+  ON demo_bookings FOR INSERT
+  WITH CHECK (true);
+
+-- Policy: Anyone can read demo bookings (Admin dashboard retrieves this)
+DROP POLICY IF EXISTS "Anyone can read demo bookings" ON demo_bookings;
+CREATE POLICY "Anyone can read demo bookings"
+  ON demo_bookings FOR SELECT
+  USING (true);
+
+-- Policy: Anyone can delete demo bookings (Admin dashboard deletes this)
+DROP POLICY IF EXISTS "Anyone can delete demo bookings" ON demo_bookings;
+CREATE POLICY "Anyone can delete demo bookings"
+  ON demo_bookings FOR DELETE
+  USING (true);
+

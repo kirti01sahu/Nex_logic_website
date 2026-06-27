@@ -1,4 +1,4 @@
-﻿import React, { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -162,7 +162,7 @@ const CyberSecurityPage = () => {
         description="Protect your business with NexLogic Innovation Private Limited's advanced cybersecurity services. AI-powered threat detection, compliance, and 24/7 security monitoring at naxlogic.com."
         canonical="https://naxlogic.com/cyber-security"
       />
-      {/* Hero Section */}}
+      {/* Hero Section */}
       <section 
         className="relative min-h-[500px] md:min-h-[600px] bg-cover bg-center flex items-center justify-center overflow-hidden pt-20 md:pt-24"
         style={{

@@ -163,3 +163,153 @@
 .custom-scrollbar::-webkit-scrollbar-thumb {
   @apply bg-charcoal;
 }
+
+/* Premium Cinematic Product Showcase Slider */
+.showcase-slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.showcase-slider-track {
+  display: flex;
+  align-items: center;
+  transition: transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.showcase-item {
+  flex: 0 0 auto;
+  transition: all 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+  opacity: 0.9;
+  transform: scale(0.8);
+  pointer-events: none;
+  width: 280px;
+  margin: 0 15px;
+}
+
+@media (min-width: 640px) {
+  .showcase-item {
+    width: 480px;
+    margin: 0 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase-item {
+    width: 720px;
+    margin: 0 40px;
+  }
+}
+
+.showcase-item.active {
+  opacity: 1;
+  transform: scale(1.05); /* Active screenshot is approximately 25-30% larger than 0.8 scale of side screenshots */
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.showcase-screenshot-container {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(31, 31, 31, 0.08);
+  background: #ffffff;
+  aspect-ratio: 16/9;
+}
+
+.showcase-screenshot-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.showcase-item.active:hover .showcase-screenshot-img {
+  transform: scale(1.02);
+}
+
+/* Floating Action Widget & Icons */
+.floating-action-container {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.floating-action-container * {
+  pointer-events: auto;
+}
+
+.floating-widget-btn {
+  background-color: #384F3E;
+  color: #F5F1ED;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  box-shadow: 0 8px 24px rgba(56, 79, 62, 0.3);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+  border: 1px solid rgba(230, 222, 211, 0.2);
+}
+
+.floating-widget-btn:hover {
+  background-color: #A8B5A2;
+  color: #1F1F1F;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(168, 181, 162, 0.4);
+}
+
+.floating-connect-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.floating-connect-btn:hover {
+  transform: scale(1.1) translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.floating-whatsapp {
+  background-color: #25D366;
+}
+
+.floating-call {
+  background-color: #384F3E;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.dark .glass-card {
+  background: rgba(31, 31, 31, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+

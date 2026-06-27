@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import ScrollAnimation from '../components/ScrollAnimation';
 import SEOHead from '../components/SEOHead';
 
@@ -39,7 +39,7 @@ const AboutPage = () => {
         <div className="container-custom relative z-10">
           <ScrollAnimation>
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="heading-xl mb-6 text-white drop-shadow-lg">NexLogic Innovation Private Limited — Global Consulting & AI Technology Company</h1>
+              <h1 className="heading-lg mb-6 text-white drop-shadow-lg">NexLogic Innovation Private Limited — Global Consulting & AI Technology Company</h1>
               <p className="text-xl text-white/90 leading-relaxed drop-shadow">
                 NexLogic Innovation Private Limited is a consulting-driven technology company delivering AI-powered platforms, enterprise software, and strategic digital solutions. Formed in April 2026, NexLogic (naxlogic.com) helps organisations design digital strategy, build scalable systems, and achieve measurable business outcomes with confidence and security.
               </p>
