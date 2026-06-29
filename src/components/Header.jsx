@@ -29,31 +29,11 @@ const Header = () => {
     { name: 'eGovTalent', path: '/egovtalent' },
     { name: 'Solutions', path: '/development' },
     { name: 'Services', path: '/services' },
-    { name: 'About Us', path: '/about' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'Our Story', path: '/about' },
+    { name: 'Contact Us', path: '/contact' }
   ];
 
-  const handleBookDemoClick = (e) => {
-    e.preventDefault();
-    setIsMobileMenuOpen(false);
-    
-    if (location.pathname === '/' || location.pathname === '/egovtalent') {
-      const element = document.getElementById('book-demo');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-        return;
-      }
-    }
-    
-    // Otherwise navigate to egovtalent booking
-    navigate('/egovtalent#book-demo');
-    setTimeout(() => {
-      const element = document.getElementById('book-demo');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
-  };
+
 
   return (
     <header
@@ -89,13 +69,26 @@ const Header = () => {
               );
             })}
 
-            {/* Book Demo Button */}
-            <a
-              href="#book-demo"
-              onClick={handleBookDemoClick}
+            {/* Book a Demo Button */}
+            <Link
+              to="/contact"
               className="bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-[#1F1F1F] text-xs uppercase tracking-widest-xl font-bold px-5 py-2.5 rounded-full transition-all duration-300 shadow-md hover:scale-105"
             >
-              Book Demo
+              Book a Demo
+            </Link>
+
+            {/* Candidate Register Button */}
+            <a
+              href="https://egovtalent.com/candidate/login"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-xs uppercase tracking-widest-xl font-bold px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 border ${
+                isDarkHero
+                  ? 'border-white/20 hover:border-white text-white bg-white/5 hover:bg-white/10'
+                  : 'border-[#384F3E]/30 hover:border-[#384F3E] text-[#384F3E] dark:border-white/20 dark:hover:border-white dark:text-white hover:bg-[#384F3E]/5 dark:hover:bg-white/5'
+              }`}
+            >
+              Candidate Register
             </a>
           </nav>
 
@@ -166,12 +159,20 @@ const Header = () => {
                   </Link>
                 );
               })}
-              <a
-                href="#book-demo"
-                onClick={handleBookDemoClick}
+              <Link
+                to="/contact"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="bg-[#384F3E] hover:bg-[#A8B5A2] text-white text-center text-xs uppercase tracking-widest-xl font-bold py-3 rounded-lg transition-all"
               >
-                Book Demo
+                Book a Demo
+              </Link>
+              <a
+                href="https://egovtalent.com/candidate/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border border-[#384F3E]/30 dark:border-white/20 text-[#384F3E] dark:text-white text-center text-xs uppercase tracking-widest-xl font-bold py-3 rounded-lg transition-all"
+              >
+                Candidate Register
               </a>
             </nav>
           </div>

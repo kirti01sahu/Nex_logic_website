@@ -8,7 +8,7 @@ const Footer = () => {
     { name: 'eGovTalent', path: '/egovtalent' },
     { name: 'Features', path: '/egovtalent#features' },
     { name: 'Pricing', path: '/egovtalent#pricing' },
-    { name: 'Demo', path: '/egovtalent#book-demo' }
+    { name: 'Demo', path: '/#book-demo' }
   ];
 
   const solutionsLinks = [
@@ -20,9 +20,9 @@ const Footer = () => {
 
 
   const companyLinks = [
-    { name: 'About', path: '/about' },
+    { name: 'Our Story', path: '/about' },
     { name: 'Careers', path: '/careers' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Contact Us', path: '/contact' },
     { name: 'Privacy Policy', path: '/privacy' }
   ];
 

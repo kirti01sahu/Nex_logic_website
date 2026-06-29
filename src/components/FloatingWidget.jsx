@@ -27,16 +27,9 @@ const FloatingWidget = () => {
     const element = document.getElementById('book-demo');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      return;
+    } else {
+      navigate('/#book-demo');
     }
-    // If not on a page with demo form, navigate to egovtalent demo
-    navigate('/egovtalent#book-demo');
-    setTimeout(() => {
-      const element = document.getElementById('book-demo');
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }, 100);
   };
 
   const handleContactSalesClick = () => {
