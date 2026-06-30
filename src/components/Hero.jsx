@@ -41,7 +41,7 @@ const Hero = () => {
       {/* Background Video */}
       <div className="absolute inset-0">
         <video
-          src="/landing_video.mp4"
+          src="/landingpage_video2.mp4"
           autoPlay
           loop
           muted

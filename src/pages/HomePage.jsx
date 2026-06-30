@@ -5,7 +5,7 @@ import ScrollAnimation from '../components/ScrollAnimation';
 
 const HomePage = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-  const [modalVideoSrc, setModalVideoSrc] = useState('/landing_video.mp4');
+  const [modalVideoSrc, setModalVideoSrc] = useState('/landingpage_video2.mp4');
 
   return (
     <div className="bg-cream dark:bg-charcoal text-charcoal dark:text-[#E6DED3] transition-colors duration-300">
@@ -26,7 +26,7 @@ const HomePage = () => {
             playsInline
             className="w-full h-full object-cover filter brightness-[0.35]"
           >
-            <source src="/landing_video1.mp4" type="video/mp4" />
+            <source src="/landingpage_video2.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* Dark transparent overlay */}
@@ -195,10 +195,10 @@ const HomePage = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             {[
-              { name: "Governments", sub: "Digital Public Infrastructure", desc: "Empowering public systems with secure, high-concurrency portals, e-governance consulting, and compliant databases." },
-              { name: "Enterprises", sub: "Operational Scale & Automation", desc: "Streamlining enterprise resource planning, custom software platforms, and agentic workflows to multiply corporate output." },
-              { name: "Startups & Scaleups", sub: "Rapid Engineering & MVP Delivery", desc: "Accelerating time-to-market with quick engineering, cloud-native scalability, and agile strategy advisory." },
-              { name: "Financial & BFSI", sub: "Security & Growth Intelligence", desc: "Designing custom analytics frameworks, secure data integrations, and growth intelligence consulting." }
+              { name: "Professionals", sub: "E-Governance Careers", desc: "Empowering E-Governance professionals to discover meaningful career opportunities, grow their expertise, and create lasting public impact." },
+              { name: "Organizations", sub: "GovTech Recruitment", desc: "Helping government agencies, consulting firms, and system integrators connect with specialized E-Governance talent efficiently." },
+              { name: "Consultants", sub: "Expert Advisory", desc: "Supporting domain experts and advisors in finding high-impact projects, collaborations, and leadership opportunities." },
+              { name: "Startups", sub: "Emerging GovTech", desc: "Enabling GovTech innovators and emerging startups to access talent, partnerships, and opportunities within the Digital Governance ecosystem." }
             ].map((ind, i) => (
               <ScrollAnimation key={i}>
                 <div className="bg-white dark:bg-charcoal rounded-xl p-8 shadow-warm border border-gray-100 dark:border-white/5 hover:shadow-card hover:border-[#A8B5A2]/30 transition-all duration-300 h-full flex flex-col justify-between">
