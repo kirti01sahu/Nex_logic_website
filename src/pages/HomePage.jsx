@@ -241,6 +241,148 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* SECTION 7 – GROW WITH NEXLOGIC */}
+      <section className="py-24 md:py-36 bg-cream dark:bg-charcoal px-4 md:px-6">
+        <div className="container-custom max-w-6xl">
+          {/* Header */}
+          <ScrollAnimation>
+            <div className="text-center max-w-3xl mx-auto mb-16 md:mb-24">
+              <span className="text-[10px] uppercase tracking-widest-4xl text-[#6F6A63] dark:text-[#D2C8BB]/60 font-bold mb-4 block">Collaboration Opportunities</span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-light text-charcoal dark:text-white mb-6 leading-tight">
+                Grow With NexLogic &amp; eGovTalent
+              </h2>
+              <p className="text-[#6F6A63] dark:text-[#D2C8BB]/70 text-sm md:text-base font-light leading-relaxed">
+                Whether you're an organization, an HR consultancy, or an independent HR professional, we offer opportunities to collaborate and grow together through our recruitment ecosystem.
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          {/* Three Cards */}
+          <div className="grid md:grid-cols-3 gap-8">
+
+            {/* Card 1 – Become Our Partner */}
+            <ScrollAnimation>
+              <div className="bg-white dark:bg-charcoal-light rounded-2xl p-8 shadow-warm border border-gray-100 dark:border-white/5 hover:shadow-card hover:border-[#A8B5A2]/40 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
+                {/* Icon */}
+                <div className="w-14 h-14 rounded-xl bg-[#384F3E]/10 dark:bg-[#A8B5A2]/10 flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-3xl text-sage-green">handshake</span>
+                </div>
+                {/* Category */}
+                <span className="text-[10px] uppercase tracking-widest font-mono text-sage-green font-bold mb-2 block">Partnership</span>
+                {/* Title */}
+                <h3 className="text-xl font-heading font-semibold text-charcoal dark:text-white mb-4 leading-snug">
+                  Become Our Partner
+                </h3>
+                {/* Description */}
+                <p className="text-[#6F6A63] dark:text-[#D2C8BB]/70 text-sm font-light leading-relaxed mb-6">
+                  Partner with NexLogic and eGovTalent to expand your business opportunities and deliver innovative recruitment solutions to your clients.
+                </p>
+                {/* Benefits */}
+                <ul className="space-y-2.5 mb-8 flex-1">
+                  {[
+                    "Access to our growing recruitment ecosystem.",
+                    "Opportunity to generate recurring business.",
+                    "Dedicated onboarding and partnership support.",
+                    "Collaborate on enterprise and government projects."
+                  ].map((benefit, i) => (
+                    <li key={i} className="flex items-start gap-2.5 text-xs text-[#6F6A63] dark:text-[#D2C8BB]/70 font-light leading-relaxed">
+                      <span className="material-symbols-outlined text-sm text-sage-green mt-0.5 flex-shrink-0">check_circle</span>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+                {/* CTA */}
+                <Link to="/contact">
+                  <button className="w-full bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-charcoal py-3.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all hover:scale-105 mt-auto">
+                    Become a Partner
+                  </button>
+                </Link>
+              </div>
+            </ScrollAnimation>
+
+            {/* Card 2 – Outsourced HR Recruitment */}
+            <ScrollAnimation>
+              <div className="bg-white dark:bg-charcoal-light rounded-2xl p-8 shadow-warm border border-gray-100 dark:border-white/5 hover:shadow-card hover:border-[#A8B5A2]/40 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
+                {/* Icon */}
+                <div className="w-14 h-14 rounded-xl bg-[#384F3E]/10 dark:bg-[#A8B5A2]/10 flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-3xl text-sage-green">groups</span>
+                </div>
+                {/* Category */}
+                <span className="text-[10px] uppercase tracking-widest font-mono text-sage-green font-bold mb-2 block">HR Services</span>
+                {/* Title */}
+                <h3 className="text-xl font-heading font-semibold text-charcoal dark:text-white mb-4 leading-snug">
+                  Outsourced HR Recruitment
+                </h3>
+                {/* Description */}
+                <p className="text-[#6F6A63] dark:text-[#D2C8BB]/70 text-sm font-light leading-relaxed mb-6">
+                  Choose our flexible subscription-based recruitment services and let our HR experts manage your hiring process efficiently.
+                </p>
+                {/* Benefits */}
+                <ul className="space-y-2.5 mb-8 flex-1">
+                  {[
+                    "Flexible subscription plans based on your hiring needs.",
+                    "End-to-end recruitment management.",
+                    "AI-powered candidate screening.",
+                    "Reduced hiring time and operational costs."
+                  ].map((benefit, i) => (
+                    <li key={i} className="flex items-start gap-2.5 text-xs text-[#6F6A63] dark:text-[#D2C8BB]/70 font-light leading-relaxed">
+                      <span className="material-symbols-outlined text-sm text-sage-green mt-0.5 flex-shrink-0">check_circle</span>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+                {/* CTA */}
+                <Link to="/contact">
+                  <button className="w-full bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-charcoal py-3.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all hover:scale-105 mt-auto">
+                    Talk to Our Team
+                  </button>
+                </Link>
+              </div>
+            </ScrollAnimation>
+
+            {/* Card 3 – Freelancer HR */}
+            <ScrollAnimation>
+              <div className="bg-white dark:bg-charcoal-light rounded-2xl p-8 shadow-warm border border-gray-100 dark:border-white/5 hover:shadow-card hover:border-[#A8B5A2]/40 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
+                {/* Icon */}
+                <div className="w-14 h-14 rounded-xl bg-[#384F3E]/10 dark:bg-[#A8B5A2]/10 flex items-center justify-center mb-6">
+                  <span className="material-symbols-outlined text-3xl text-sage-green">person_pin</span>
+                </div>
+                {/* Category */}
+                <span className="text-[10px] uppercase tracking-widest font-mono text-sage-green font-bold mb-2 block">Freelancer Network</span>
+                {/* Title */}
+                <h3 className="text-xl font-heading font-semibold text-charcoal dark:text-white mb-4 leading-snug">
+                  Freelancer HR
+                </h3>
+                {/* Description */}
+                <p className="text-[#6F6A63] dark:text-[#D2C8BB]/70 text-sm font-light leading-relaxed mb-6">
+                  Join the eGovTalent ecosystem as a Freelancer HR professional and start working on real hiring opportunities while earning through successful placements.
+                </p>
+                {/* Benefits */}
+                <ul className="space-y-2.5 mb-8 flex-1">
+                  {[
+                    "Work from anywhere with complete flexibility.",
+                    "Access live hiring requirements.",
+                    "Earn incentives for successful candidate placements.",
+                    "Build your professional HR network and experience."
+                  ].map((benefit, i) => (
+                    <li key={i} className="flex items-start gap-2.5 text-xs text-[#6F6A63] dark:text-[#D2C8BB]/70 font-light leading-relaxed">
+                      <span className="material-symbols-outlined text-sm text-sage-green mt-0.5 flex-shrink-0">check_circle</span>
+                      <span>{benefit}</span>
+                    </li>
+                  ))}
+                </ul>
+                {/* CTA */}
+                <a href="https://egovtalent.com/candidate/login" target="_blank" rel="noopener noreferrer">
+                  <button className="w-full bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-charcoal py-3.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all hover:scale-105 mt-auto">
+                    Join as Freelancer HR
+                  </button>
+                </a>
+              </div>
+            </ScrollAnimation>
+
+          </div>
+        </div>
+      </section>
 
 
       {/* PRODUCT TOUR MODAL */}
