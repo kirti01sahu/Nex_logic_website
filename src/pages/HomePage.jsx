@@ -163,7 +163,7 @@ const HomePage = () => {
                     </li>
                   ))}
                 </ul>
-                <a href="https://egovtalent.com/candidate/login" target="_blank" rel="noopener noreferrer">
+                <a href="https://egovtalent.com/" target="_blank" rel="noopener noreferrer">
                   <button className="w-full bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-charcoal py-3.5 rounded-full font-bold text-xs uppercase tracking-widest transition-all hover:scale-105">Join as Freelancer HR</button>
                 </a>
               </div>
