@@ -22,15 +22,7 @@ const FloatingWidget = () => {
     window.location.href = 'https://egovtalent.com/';
   };
 
-  const handleDemoClick = () => {
-    setIsOpen(false);
-    const element = document.getElementById('book-demo');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      navigate('/#book-demo');
-    }
-  };
+
 
   const handleContactSalesClick = () => {
     setIsOpen(false);
@@ -52,13 +44,7 @@ const FloatingWidget = () => {
             <span className="material-symbols-outlined text-lg text-sage-green">explore</span>
             <span>Product Tour</span>
           </button>
-          <button
-            onClick={handleDemoClick}
-            className="flex items-center gap-3 w-full text-left px-3 py-2 text-xs font-semibold text-[#1F1F1F] dark:text-[#E6DED3] hover:bg-taupe/20 dark:hover:bg-white/5 rounded-lg transition-colors"
-          >
-            <span className="material-symbols-outlined text-lg text-sage-green">calendar_today</span>
-            <span>Book Demo</span>
-          </button>
+
           <button
             onClick={handleContactSalesClick}
             className="flex items-center gap-3 w-full text-left px-3 py-2 text-xs font-semibold text-[#1F1F1F] dark:text-[#E6DED3] hover:bg-taupe/20 dark:hover:bg-white/5 rounded-lg transition-colors"
