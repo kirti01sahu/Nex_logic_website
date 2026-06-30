@@ -5,7 +5,7 @@ import ScrollAnimation from '../components/ScrollAnimation';
 
 const HomePage = () => {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
-  const [modalVideoSrc, setModalVideoSrc] = useState('/landingpage_video2.mp4');
+  const [modalVideoSrc, setModalVideoSrc] = useState('/landingpage_video3.mp4');
 
   return (
     <div className="bg-cream dark:bg-charcoal text-charcoal dark:text-[#E6DED3] transition-colors duration-300">
@@ -26,7 +26,7 @@ const HomePage = () => {
             playsInline
             className="w-full h-full object-cover filter brightness-[0.35]"
           >
-            <source src="/landingpage_video2.mp4" type="video/mp4" />
+            <source src="/landingpage_video3.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* Dark transparent overlay */}
