@@ -26,7 +26,7 @@ const HomePage = () => {
             playsInline
             className="w-full h-full object-cover filter brightness-[0.35]"
           >
-            <source src="/landing_video.mp4" type="video/mp4" />
+            <source src="/landing_video1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           {/* Dark transparent overlay */}
