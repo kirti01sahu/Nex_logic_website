@@ -119,14 +119,14 @@ const HomePage = () => {
               </div>
             </ScrollAnimation>
 
-            {/* Card 2 – Outsourced HR Recruitment */}
+            {/* Card 2 – Outsourced your HR Recruitment */}
             <ScrollAnimation>
               <div className="bg-white dark:bg-charcoal-light rounded-2xl p-8 shadow-warm border border-gray-100 dark:border-white/5 hover:shadow-card hover:border-[#A8B5A2]/40 hover:-translate-y-1 transition-all duration-300 h-full flex flex-col">
                 <div className="w-14 h-14 rounded-xl bg-[#384F3E]/10 dark:bg-[#A8B5A2]/10 flex items-center justify-center mb-6">
                   <span className="material-symbols-outlined text-3xl text-sage-green">groups</span>
                 </div>
                 <span className="text-[10px] uppercase tracking-widest font-mono text-sage-green font-bold mb-2 block">HR Services</span>
-                <h3 className="text-xl font-heading font-semibold text-charcoal dark:text-white mb-4 leading-snug">Outsourced HR Recruitment</h3>
+                <h3 className="text-xl font-heading font-semibold text-charcoal dark:text-white mb-4 leading-snug">Out-source your HR Recruitment</h3>
                 <p className="text-[#6F6A63] dark:text-[#D2C8BB]/70 text-sm font-light leading-relaxed mb-6">
                   Choose our flexible subscription-based recruitment services and let our HR experts manage your hiring process efficiently.
                 </p>
