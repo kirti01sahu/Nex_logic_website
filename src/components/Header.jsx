@@ -88,7 +88,7 @@ const Header = () => {
                   : 'border-[#384F3E]/30 hover:border-[#384F3E] text-[#384F3E] dark:border-white/20 dark:hover:border-white dark:text-white hover:bg-[#384F3E]/5 dark:hover:bg-white/5'
               }`}
             >
-              Candidate Register
+              Candidate Registration
             </a>
           </nav>
 
@@ -172,7 +172,7 @@ const Header = () => {
                 rel="noopener noreferrer"
                 className="border border-[#384F3E]/30 dark:border-white/20 text-[#384F3E] dark:text-white text-center text-xs uppercase tracking-widest-xl font-bold py-3 rounded-lg transition-all"
               >
-                Candidate Register
+                Candidate Registration
               </a>
             </nav>
           </div>
