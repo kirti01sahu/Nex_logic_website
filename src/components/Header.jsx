@@ -49,14 +49,14 @@ const Header = () => {
           <TextLogo forceDarkLogo={isDarkHero} />
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-5">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`text-xs uppercase tracking-widest-xl font-semibold transition-all duration-300 hover:scale-105 ${
+                  className={`text-xs uppercase tracking-widest-xl font-semibold transition-all duration-300 hover:scale-105 whitespace-nowrap ${
                     isActive
                       ? isDarkHero ? 'text-sage-green' : 'text-[#384F3E] dark:text-sage-green'
                       : isDarkHero
@@ -72,7 +72,7 @@ const Header = () => {
             {/* Book a Demo Button */}
             <Link
               to="/contact"
-              className="bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-[#1F1F1F] text-xs uppercase tracking-widest-xl font-bold px-5 py-2.5 rounded-full transition-all duration-300 shadow-md hover:scale-105"
+              className="bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-[#1F1F1F] text-xs uppercase tracking-widest-xl font-bold px-4 py-2 rounded-full transition-all duration-300 shadow-md hover:scale-105 whitespace-nowrap"
             >
               Book a Demo
             </Link>
@@ -82,7 +82,7 @@ const Header = () => {
               href="https://egovtalent.com/candidate/login"
               target="_blank"
               rel="noopener noreferrer"
-              className={`text-xs uppercase tracking-widest-xl font-bold px-5 py-2.5 rounded-full transition-all duration-300 hover:scale-105 border ${
+              className={`text-xs uppercase tracking-widest-xl font-bold px-4 py-2 rounded-full transition-all duration-300 hover:scale-105 border whitespace-nowrap ${
                 isDarkHero
                   ? 'border-white/20 hover:border-white text-white bg-white/5 hover:bg-white/10'
                   : 'border-[#384F3E]/30 hover:border-[#384F3E] text-[#384F3E] dark:border-white/20 dark:hover:border-white dark:text-white hover:bg-[#384F3E]/5 dark:hover:bg-white/5'
