@@ -79,16 +79,16 @@ const EGovTalentPage = () => {
       url: "/egov_hr_command_center_v3.png"
     },
     {
-      title: "Client Collaboration Hub",
-      desc: "Monitor recruitment funnels, review shared candidate profiles, and manage corporate client feedback.",
-      benefits: ["Direct profile sharing", "Interactive funnel stages", "Structured corporate review"],
-      url: "/egov_client_portal_v3.png"
-    },
-    {
       title: "Candidate Explore Jobs",
       desc: "Semantic-match filter view for candidates to search and apply to positions.",
       benefits: ["Semantic skill matches", "Custom filter grids", "One-click application logs"],
       url: "/egov_explore_jobs_v3.png"
+    },
+    {
+      title: "Client Collaboration Hub",
+      desc: "Monitor recruitment funnels, review shared candidate profiles, and manage corporate client feedback.",
+      benefits: ["Direct profile sharing", "Interactive funnel stages", "Structured corporate review"],
+      url: "/egov_client_portal_v3.png"
     }
   ];
 
