@@ -195,7 +195,7 @@ const Contact = () => {
                     <button
                       type="submit"
                       disabled={status.type === 'loading'}
-                      className={`w-full py-4.5 rounded-full font-bold text-xs uppercase tracking-widest-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 ${
+                      className={`w-full py-4 rounded-xl font-bold text-xs uppercase tracking-widest-xl transition-all duration-300 shadow-md flex items-center justify-center gap-2 ${
                         status.type === 'loading'
                           ? 'bg-brown-grey text-white cursor-not-allowed'
                           : 'bg-charcoal dark:bg-sandstone text-white dark:text-charcoal hover:bg-dark-olive dark:hover:bg-white hover:-translate-y-1 hover:shadow-lg'

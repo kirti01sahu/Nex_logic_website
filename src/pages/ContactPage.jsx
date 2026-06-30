@@ -23,7 +23,7 @@ const ContactPage = () => {
       <section
         className="relative min-h-[550px] md:min-h-[650px] flex items-center justify-center overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(31, 31, 31, 0.6) 0%, rgba(31, 31, 31, 0.8) 100%), url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2560&auto=format&fit=crop')`,
+          backgroundImage: `linear-gradient(rgba(31, 31, 31, 0.7) 0%, rgba(31, 31, 31, 0.9) 100%), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2560&auto=format&fit=crop')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
@@ -47,13 +47,13 @@ const ContactPage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <button
                 onClick={handleScrollToContact}
-                className="w-full sm:w-auto bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-charcoal px-10 py-4.5 rounded-full font-bold text-xs uppercase tracking-widest-xl transition-all shadow-lg hover:scale-105"
+                className="w-full sm:w-auto bg-[#384F3E] hover:bg-[#A8B5A2] text-white hover:text-charcoal px-8 py-4 rounded-xl font-bold text-xs uppercase tracking-widest-xl transition-all shadow-lg hover:scale-105"
               >
                 Contact Our Team
               </button>
               <button
                 onClick={handleScrollToContact}
-                className="w-full sm:w-auto border border-white/20 hover:border-white bg-white/5 hover:bg-white/10 text-white px-10 py-4.5 rounded-full font-bold text-xs uppercase tracking-widest-xl transition-all hover:scale-105"
+                className="w-full sm:w-auto border border-white/20 hover:border-white bg-white/5 hover:bg-white/10 text-white px-8 py-4 rounded-xl font-bold text-xs uppercase tracking-widest-xl transition-all hover:scale-105"
               >
                 Book a Demo
               </button>
